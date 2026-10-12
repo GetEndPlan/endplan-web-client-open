@@ -34,4 +34,5 @@ coverage
 .env
 .env.*
 !.env.example
+!.env.stubs.example
 FEATURES.md
