@@ -1,0 +1,66 @@
+# Build stage
+FROM node:22-alpine AS builder
+
+WORKDIR /app
+
+# Build arguments for Vite environment variables
+# Empty = use window.location.origin at runtime (works with nginx reverse proxy)
+ARG VITE_AUTH_URL=
+ARG VITE_API_URL=
+# Plausible site domain (must match Plausible dashboard). Empty = app default.
+ARG VITE_PLAUSIBLE_DOMAIN=
+
+# Set environment variables for build
+ENV VITE_AUTH_URL=$VITE_AUTH_URL
+ENV VITE_API_URL=$VITE_API_URL
+ENV VITE_PLAUSIBLE_DOMAIN=$VITE_PLAUSIBLE_DOMAIN
+
+# Copy package files and scripts used in postinstall
+COPY package*.json ./
+COPY scripts/ ./scripts/
+
+# Install dependencies
+RUN npm ci
+
+# Copy source code (exclude server folder - not needed for client build)
+COPY src/ ./src/
+COPY public/ ./public/
+COPY index.html ./
+COPY vite.config.ts ./
+COPY tsconfig*.json ./
+COPY tailwind.config.js ./
+COPY postcss.config.js ./
+COPY eslint.config.js ./
+
+# Build the app
+RUN npm run build
+
+# Production stage - serve with nginx
+FROM nginx:alpine
+
+# Install curl for healthcheck and openssl for self-signed certificates
+RUN apk add --no-cache curl openssl gettext
+
+# Create directories
+RUN mkdir -p /etc/nginx/ssl /etc/nginx/templates
+
+# Copy built assets
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Copy nginx config templates
+COPY nginx.conf.template /etc/nginx/templates/
+COPY nginx-ssl.conf.template /etc/nginx/templates/
+COPY nginx-mjs-mime.types.conf /etc/nginx/conf.d/00-mjs-mime.types.conf
+
+# Copy entrypoint script
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+
+# Environment variables with defaults
+ENV SERVER_NAME=localhost
+ENV SSL_ENABLED=false
+
+# Expose both HTTP and HTTPS ports
+EXPOSE 80 443
+
+ENTRYPOINT ["/docker-entrypoint.sh"]

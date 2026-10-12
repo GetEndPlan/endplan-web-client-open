@@ -1,0 +1,4 @@
+{
+  "primaryKeyExchangeAlgorithm": "X25519",
+  "keyAlgorithms": ["X25519", "ML-KEM-768"]
+}

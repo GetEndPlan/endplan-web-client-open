@@ -1,0 +1,62 @@
+/** Generated from design/tokens.json — run: npm run tokens:build */
+:root {
+  --ep-heading: 36 22 69;
+  --ep-body: 0 0 0;
+  --ep-body-muted: 30 30 30;
+  --ep-primary: 119 66 250;
+  --ep-primary-accent: 109 75 255;
+  --ep-primary-nav: 98 92 242;
+  --ep-primary-soft: 221 208 254;
+  --ep-primary-softer: 228 217 254;
+  --ep-primary-muted: 156 134 254;
+  --ep-primary-stroke: 138 56 245;
+  --ep-primary-dark: 44 32 74;
+  --ep-primary-darker: 42 23 89;
+  --ep-surface: 255 255 255;
+  --ep-surface-subtle: 246 249 252;
+  --ep-surface-muted: 247 248 249;
+  --ep-surface-highlight: 241 248 255;
+  --ep-surface-card: 255 255 255;
+  --ep-surface-panel: rgb(255 255 255);
+  --ep-border: 229 229 229;
+  --ep-border-card: 226 232 240;
+  --ep-border-subtle: rgba(0, 0, 0, 0.1);
+  --ep-gradient-start: 111 168 239;
+  --ep-gradient-mid: 109 75 255;
+  --ep-gradient-end: 67 23 255;
+  --ep-gradient-soft: 174 150 238;
+  --ep-dark-primary: 86 48 178;
+  --ep-dark-surface: 61 43 103;
+  --ep-avatar: 217 217 217;
+}
+
+.dark {
+  --ep-heading: 255 255 255;
+  --ep-body: 255 255 255;
+  --ep-body-muted: 255 255 255;
+  --ep-primary: 86 48 178;
+  --ep-primary-accent: 119 66 250;
+  --ep-primary-nav: 156 134 254;
+  --ep-primary-soft: 86 48 178;
+  --ep-primary-softer: 44 32 74;
+  --ep-primary-muted: 156 134 254;
+  --ep-primary-stroke: 138 56 245;
+  --ep-primary-dark: 44 32 74;
+  --ep-primary-darker: 23 12 49;
+  --ep-surface: 23 12 49;
+  --ep-surface-card: 23 12 49;
+  --ep-surface-subtle: 44 32 74;
+  --ep-surface-muted: 23 12 49;
+  --ep-surface-highlight: 86 48 178;
+  --ep-surface-panel: #2C204A80;
+  --ep-border: 64 55 85;
+  --ep-border-card: 46 36 70;
+  --ep-border-subtle: rgba(255, 255, 255, 0.1);
+  --ep-gradient-start: 111 168 239;
+  --ep-gradient-mid: 109 75 255;
+  --ep-gradient-end: 67 23 255;
+  --ep-gradient-soft: 174 150 238;
+  --ep-dark-primary: 86 48 178;
+  --ep-dark-surface: 23 12 49;
+  --ep-avatar: 64 55 85;
+}
