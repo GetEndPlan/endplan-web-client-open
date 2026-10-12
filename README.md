@@ -1,84 +1,114 @@
-# EndPlan Web Client (open source)
+# EndPlan Web Client
 
-Sanitized open-source export of the EndPlan web client: React 19 + TypeScript + Vite,
-client-side crypto, vault UI shell, and auth/API clients.
+[![License: GPL-3.0-or-later](https://img.shields.io/badge/License-GPL--3.0--or--later-blue.svg)](LICENSE)
+[![Node.js ≥ 22.12](https://img.shields.io/badge/node-%E2%89%A522.12-brightgreen.svg)](.nvmrc)
 
-**Baseline:** curated from private `endplan-web-client` branch `v.1.0.1` (batched publish — not a live mirror).
+Open-source **EndPlan** single-page app: an end-of-life vault you unlock in the browser.
 
-## What this repo is
+React 19 · TypeScript · Vite. Vault content is encrypted **on the client** before it is sent to an API. This repository is a sanitized public export of that client (crypto, vault UI, auth/API clients). The production auth server and Go API stay private.
 
-- A runnable EndPlan SPA you can point at your own auth + API via `VITE_AUTH_URL` / `VITE_API_URL`
-- Client crypto suitable for audit (`src/shared/lib/crypto/`)
-- Placeholder logos (proprietary brand packs excluded); product name remains **EndPlan**
+```
+Password ──Argon2id──► KEK (never stored)
+                         │
+                         ├── AES-256-GCM ──► user private keys
+                         │
+                         DEK (random 32 bytes)
+                         │
+                         ├── wrapped per recipient (X25519; optional ML-KEM-768 hybrid)
+                         └── HKDF-SHA256 ──► purpose keys ──► AES-256-GCM (+ AAD)
+                                            vault / sections / documents
+```
 
-## What this repo is not
+## Features
 
-- Not the private EndPlan production monorepo
-- Not a continuous sync of every private commit
-- Auth server and Go API stay private — use `npm run stubs` or your own backends
+- [x] Zero-knowledge vault UI (assets, policies, documents, instructions, contacts)
+- [x] Client-side cryptography suitable for audit (`src/shared/lib/crypto/`)
+- [x] Better Auth session client + Go API client contracts
+- [x] Local mock auth + API so you can run without private backends (`npm run stubs`)
+- [x] Export flow (CSV / documents / overview PDF)
+- [x] i18n (English / French) and dark mode
 
-See `docs/oss/CONTENT_BOUNDARY.md` and `docs/oss/PUBLISH.md`.
+## Status
+
+This is a **batched** publish from the private EndPlan web client — not a live mirror of every private commit. Prefer the latest public tag when reporting issues.
+
+| In this repo | Not in this repo |
+| --- | --- |
+| SPA + client crypto | Production auth server |
+| Mock backend (`stubs/`) | Production Go API |
+| Placeholder EndPlan marks | Proprietary logo / favicon packs |
+
+See [`docs/oss/CONTENT_BOUNDARY.md`](docs/oss/CONTENT_BOUNDARY.md) and [`docs/oss/PUBLISH.md`](docs/oss/PUBLISH.md).
 
 ## Requirements
 
-- Node.js **≥ 22.12** (see `.nvmrc`)
+- **Node.js ≥ 22.12** (see [`.nvmrc`](.nvmrc))
 
-## Quickstart
+## Getting started
+
+Run the app against the in-repo mock (two terminals):
 
 ```bash
 npm install
 cp .env.stubs.example .env
-npm run stubs    # terminal 1 — mock auth+API (not the private servers)
-npm run dev      # terminal 2
+
+npm run stubs   # terminal 1 — mock auth + API on http://localhost:8080
+npm run dev     # terminal 2 — Vite on http://localhost:5173
 ```
 
-Demo login: `demo@example.com` / `Demo1234!`
+Open [http://localhost:5173](http://localhost:5173).
 
-Both `VITE_AUTH_URL` and `VITE_API_URL` must be the **same origin** (`http://localhost:8080`) so the session cookie is sent with API calls. Details: `stubs/README.md`.
+| | |
+| --- | --- |
+| **Email** | `demo@example.com` |
+| **Password** | `Demo1234!` |
 
-To use your own backends instead, copy `.env.example` and set the URLs yourself.
+`VITE_AUTH_URL` and `VITE_API_URL` must share the **same origin** so the session cookie is sent with API calls. Details: [`stubs/README.md`](stubs/README.md).
 
-Optional checks:
+To point at your own backends instead:
+
+```bash
+cp .env.example .env
+# edit VITE_AUTH_URL / VITE_API_URL
+npm run dev
+```
+
+Environment reference: [`ENV.md`](ENV.md). Client contracts without open backends: [`docs/contracts/README.md`](docs/contracts/README.md).
+
+## Development
 
 ```bash
 npm run lint
 npm test
 npm run build
-npm run oss:sanity
+npm run oss:sanity   # fails on proprietary brand paths / forbidden host strings
 ```
 
-## Environment
+| Script | Purpose |
+| --- | --- |
+| `npm run dev` | Vite development server |
+| `npm run stubs` | Local mock auth + API |
+| `npm run build` | Production build |
+| `npm run lint` | ESLint + architecture / state / typography checks |
+| `npm test` | Unit tests |
+| `npm run preview` | Preview the production build |
 
-| Variable | Required? | Purpose |
-| --- | --- | --- |
-| `VITE_AUTH_URL` | Dev: yes (or same-origin) | Better Auth base |
-| `VITE_API_URL` | Dev: yes (or same-origin) | Go API base |
-| `VITE_SUPPORT_URL` | Optional | Footer support link |
-| `VITE_TERMS_URL` | Optional | Footer terms link |
-| `VITE_PRIVACY_URL` | Optional | Footer privacy link |
-| `VITE_PLAUSIBLE_DOMAIN` | Optional | Analytics off if unset |
-| `VITE_PLAUSIBLE_ENABLE_IN_DEV` | Optional | Local Plausible |
+Feature-sliced layout under `src/` (`app`, `pages`, `features`, `shared`). See [`docs/web-client-architecture.md`](docs/web-client-architecture.md).
 
-Details: `ENV.md`.
+## Security
 
-## Scripts
+Please **do not** open public issues for vulnerabilities. See [`SECURITY.md`](SECURITY.md) for coordinated disclosure.
 
-- `npm run dev` — Vite dev server
-- `npm run build` — production build
-- `npm run lint` — ESLint + architecture/state/typography checks
-- `npm test` — unit tests
-- `npm run oss:sanity` — fail on proprietary brand paths / forbidden host strings
-- `npm run oss:prepare-export` — copy sanitized tree to `../endplan-web-client-public` for first public push
-- `npm run stubs` — local mock auth+API for OSS contributors
+In scope for this repository: client crypto, XSS, SPA session handling, and secret leakage via the frontend bundle. Production infrastructure and private backends are out of scope unless you are authorized to test them.
 
-## Architecture
+## Contributing
 
-Feature-sliced layout under `src/` (`app`, `pages`, `features`, `shared`). See `docs/web-client-architecture.md`.
+Contributions are welcome under the same **GPL-3.0-or-later** terms. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a pull request.
 
-## License & security
+## License
 
 This project is licensed under the **GNU General Public License v3.0 or later**
-(SPDX: `GPL-3.0-or-later`). The full terms are in [`LICENSE`](LICENSE).
+(SPDX: `GPL-3.0-or-later`). See [`LICENSE`](LICENSE).
 
 Copyright (C) 2026 EndPlan contributors
 
@@ -91,17 +121,9 @@ This program is distributed in the hope that it will be useful, but **without
 any warranty**; without even the implied warranty of merchantability or fitness
 for a particular purpose. See the GNU General Public License for more details.
 
-If you distribute this software or a modified version, you must also provide
-the corresponding source under the same GPLv3 terms. Contributions are accepted
-under the same license (see `CONTRIBUTING.md`).
-
-- Coordinated disclosure: `SECURITY.md`
-- Contributing: `CONTRIBUTING.md`
-
-Public marketing claims still follow `docs/oss/PUBLISH.md`.
-
 ## Trademark
 
-“EndPlan” and related marks remain proprietary. Forks must not imply official EndPlan affiliation
-without permission. Proprietary logo/icon packs are excluded from this export; placeholder marks are
-generic geometry with the EndPlan product name.
+“EndPlan” and related marks remain proprietary. Forks must not imply official
+EndPlan affiliation without permission. Proprietary logo and favicon packs are
+excluded from this export; placeholders are generic geometry with the EndPlan
+product name.
