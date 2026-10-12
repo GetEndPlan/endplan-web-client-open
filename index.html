@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>EndPlan</title>
+    <script>
+      ;(function () {
+        try {
+          var raw = localStorage.getItem('endplan-theme')
+          var parsed = raw ? JSON.parse(raw) : null
+          var theme = parsed && parsed.state ? parsed.state.theme : null
+          if (theme !== 'dark' && theme !== 'light') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          }
+          document.documentElement.classList.toggle('dark', theme === 'dark')
+        } catch (e) {
+          /* noop */
+        }
+
+        try {
+          var host = (window.location.hostname || '').toLowerCase()
+          var sysHost = '%VITE_SYS_DEMO_HOST%'.trim().toLowerCase()
+          var isSys = Boolean(sysHost) && !sysHost.startsWith('%') && host === sysHost
+          if (isSys) document.title = 'SYS | EndPlan'
+        } catch (e) {
+          /* noop */
+        }
+      })()
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

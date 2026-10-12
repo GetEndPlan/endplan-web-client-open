@@ -1,0 +1,2447 @@
+{
+  "common": {
+    "appName": "EndPlan",
+    "user": "User",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "preview": "Preview",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "remove": "Remove",
+    "optional": "optional",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and",
+    "backToDashboard": "Back to Dashboard",
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar",
+    "openDrawer": "Open navigation drawer",
+    "closeDrawer": "Close navigation drawer",
+    "breadcrumb": "Breadcrumb"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "home": "Home",
+    "preference": "Preference",
+    "setupProgress": "Setup Progress",
+    "setupProgressCollapsedLine1": "Setup",
+    "setupProgressCollapsedLine2": "Progress",
+    "setupStepVault": "Setup your account",
+    "setupStepContent": "Add Assets and Document",
+    "setupStepKeyPerson": "Add Key Person",
+    "configureTransferProcess": "Configure transfer process",
+    "trustedCircle": "Trusted Circle",
+    "vaultSections": "My EndPlan",
+    "myEndPlan": {
+      "expandSubNav": "Show EndPlan sections",
+      "collapseSubNav": "Hide EndPlan sections"
+    },
+    "sharedWithMe": "EndPlan shared with me",
+    "sharedWithMeNav": {
+      "expandSubNav": "Show shared EndPlans",
+      "collapseSubNav": "Hide shared EndPlans"
+    },
+    "assets": "Assets",
+    "policies": "Policies",
+    "documents": "Documents",
+    "journal": "Journal",
+    "memoir": "Memoir",
+    "profile": "Profile",
+    "dataPrivacy": "Data & Privacy",
+    "settings": "Settings",
+    "noticePeriod": "Notice Period",
+    "transferProcess": "Transfer Process",
+    "billing": "Billing",
+    "upgradePlan": "Upgrade plan",
+    "logout": "Log out",
+    "login": "Log in",
+    "signup": "Sign up",
+    "sharedVaultNav": {
+      "sealedReady": "Sealed · ready",
+      "awaitingKeyShare": "Awaiting key share",
+      "postReleaseRecovery": "Temporarily unavailable",
+      "pendingTransfer": "Pending transfer"
+    },
+    "instructions": "Instructions",
+    "contacts": "Contacts"
+  },
+  "auth": {
+    "layout": {
+      "welcomeTitle": "Secure Your Legacy",
+      "welcomeSubtitle": "Your EndPlan stays private with open-source, zero-knowledge, and post-quantum encryption, accessible only to you and the people you trust.",
+      "welcomeSubtitle2": "No one can access your data without you granting them access, not even EndPlan.",
+      "createTitle": "Create Your EndPlan",
+      "createSubtitle": "Create a private EndPlan protected with open-source, zero-knowledge, and post-quantum encryption. You decide what to store, who to trust, and when access is allowed.",
+      "createSubtitle2": "No one can access your data without you granting them access, not even EndPlan.",
+      "securityTitle": "Security features:",
+      "feature256bit": "256-bit AES encryption",
+      "featureopenSource": "Open-source encryption",
+      "featureZeroKnowledge": "Zero-knowledge architecture",
+      "featurePostQuantum": "Post-quantum cryptography",
+      "featureArgon2": "Argon2 key derivation",
+      "poweredBy": "Powered by",
+      "allRightsReserved": "All rights reserved."
+    },
+    "login": {
+      "title": "Login to EndPlan",
+      "subtitle": "Log in to your account to continue",
+      "subtitleInvite": "Log in to accept your invitation",
+      "button": "Unlock EndPlan",
+      "loggingIn": "Unlocking...",
+      "noAccount": "Don't have an account?",
+      "signupLink": "Create Account",
+      "rememberDevice": "Remember this device",
+      "forgotPassword": "Forgot password?"
+    },
+    "signup": {
+      "title": "Create Account",
+      "subtitle": "Get started with your free account",
+      "subtitleInvite": "Sign up to accept your invitation",
+      "button": "Create EndPlan",
+      "creating": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in"
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "password": "Password",
+      "masterPassword": "Password",
+      "confirmPassword": "Confirm Password",
+      "confirmMasterPassword": "Confirm Password",
+      "passwordHint": "Password Hint (Optional)",
+      "passwordHintPlaceholder": "Something only you know...",
+      "passwordHintHelp": "A hint to help you remember your password. This will be shown if you forget your password.",
+      "namePlaceholder": "Enter your full name",
+      "emailPlaceholder": "your@email.com",
+      "passwordPlaceholder": "Enter your password",
+      "passwordsMatch": "Passwords match"
+    },
+    "passwordStrength": {
+      "label": "Password Strength:",
+      "weak": "Weak",
+      "fair": "Fair",
+      "good": "Good",
+      "strong": "Strong",
+      "hint": "Add:",
+      "chars": "8+ characters",
+      "uppercase": "uppercase letter",
+      "symbol": "special character"
+    },
+    "errors": {
+      "invalidEmail": "Enter a valid email",
+      "passwordMin": "Password must be at least 8 characters",
+      "passwordRequirements": "Password must be at least 8 characters and include an uppercase letter and a special character",
+      "passwordMismatch": "Passwords don't match",
+      "nameMin": "Name must be at least 2 characters",
+      "loginFailed": "Login failed",
+      "signupFailed": "Signup failed",
+      "userAlreadyExists": "User with this email already has an account."
+    },
+    "logout": {
+      "button": "Log out",
+      "loggingOut": "Logging out..."
+    },
+    "welcomeBack": {
+      "title": "Welcome Back!",
+      "message": "Your activity timer has been reset to",
+      "days": "{{days}} days",
+      "settingsNote": "You can update this in your settings.",
+      "continue": "Continue"
+    },
+    "verify": {
+      "title": "Verify your email",
+      "subtitle": "We sent a 6-digit code to",
+      "button": "Verify Email",
+      "verifying": "Verifying...",
+      "success": "Email verified successfully!",
+      "invalidCode": "Invalid verification code",
+      "codeSent": "New verification code sent to your email",
+      "resendFailed": "Failed to resend verification code",
+      "sending": "Sending...",
+      "resendIn": "Resend code in {{seconds}}s",
+      "resend": "Didn't receive the code? Resend",
+      "wrongEmail": "Wrong email?",
+      "andTryAgain": "and try again"
+    },
+    "forgotPassword": {
+      "title": "Reset your password",
+      "subtitle": "Enter your email and we'll send you a verification code",
+      "sendCode": "Send verification code",
+      "sending": "Sending...",
+      "codeSent": "Check your email for the 6-digit code",
+      "subtitleStep2": "Enter the 6-digit code we sent to",
+      "subtitleStep3": "Choose a new password for your account",
+      "verifyCode": "Verify code",
+      "verifying": "Verifying...",
+      "codeVerified": "Code verified. Choose your new password below.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "resetButton": "Reset password",
+      "resetting": "Resetting...",
+      "success": "Password reset successfully. You can now log in.",
+      "invalidCode": "Invalid or expired verification code",
+      "resend": "Resend code",
+      "resendIn": "Resend in {{seconds}}s",
+      "backToLogin": "Back to login"
+    },
+    "invite": {
+      "accepting": "Accepting...",
+      "loading": "Loading invitation...",
+      "invalidLink": "Invalid invitation link",
+      "expiredOrInvalid": "This invitation link is invalid or has expired.",
+      "invalidTitle": "Invalid Invitation",
+      "goHome": "Go to Home",
+      "youveBeenInvited": "You've Been Invited!",
+      "hasInvitedYou": "has invited you to join their EndPlan trusted circle as a",
+      "signUpToAccept": "To accept this invitation, please sign up or log in.",
+      "alreadyHaveAccount": "I Already Have an Account",
+      "expiresOn": "This invitation expires on {{date}}",
+      "trustedCircleInvitation": "Trusted Circle Invitation",
+      "wrongAccount": "This invitation was sent to {{invitedEmail}}, but you're logged in as {{currentEmail}}.",
+      "pleaseLoginCorrect": "Please log in with the correct account to accept this invitation."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Welcome back, {{name}}",
+    "loading": "Loading your EndPlan...",
+    "noEndPlan": "Get started by creating your EndPlan",
+    "hasEndPlan": "Manage your EndPlan and share it with your trusted circle",
+    "hasSharedOnly": "Manage your EndPlan, choose who can receive trusted access, and open EndPlans shared with you.",
+    "readiness": {
+      "title": "Your EndPlan Readiness",
+      "complete": "{{percent}}% complete",
+      "completeSetup": "Complete Setup"
+    },
+    "security": {
+      "title": "Security Status",
+      "protected": "Protected",
+      "lastBackup": "Last backup today",
+      "encryptionActive": "Encryption active"
+    },
+    "unlock": {
+      "title": "Unlock Your EndPlan",
+      "subtitle": "Enter your password to decrypt your EndPlan",
+      "button": "Unlock",
+      "passwordRequired": "Please enter your password",
+      "error": "Incorrect password. Please try again.",
+      "gateLoading": "Checking your account…",
+      "recoveryGate": {
+        "sectionTitle": "Password reset or lost unlock",
+        "toast": {
+          "passwordRequired": "Enter your sign-in password to restore."
+        }
+      },
+      "recoveryModal": {
+        "title": "Couldn’t unlock your EndPlan",
+        "description": "That password didn’t decrypt your keys. You have a recovery phrase on file—you can restore access with it, or permanently delete your keys and EndPlan data and start fresh.",
+        "restoreCta": "Restore my EndPlan",
+        "tryPasswordAgain": "Try password again",
+        "back": "Back"
+      },
+      "recovery": {
+        "hintWithRecovery": "If you recently reset your password, your old password no longer unlocks your keys. You can restore access with your 12-word recovery phrase, or permanently remove encrypted data and start fresh.",
+        "hintNoRecovery": "If you reset your password and did not set up a recovery phrase, your previous encrypted data cannot be recovered. You can remove old keys and data to start fresh.",
+        "showRestore": "Restore with recovery phrase",
+        "cantUnlockCta": "Can't unlock? Use recovery phrase or start fresh",
+        "hideRestore": "Hide recovery form",
+        "instructions": "Enter your 12-word recovery phrase in order, using the same password you use to sign in (your new password after a reset).",
+        "secretLabel": "Recovery phrase",
+        "secretPlaceholder": "Paste or type all 12 words",
+        "submit": "Restore access",
+        "toast": {
+          "missingSecret": "Enter your 12-word recovery phrase.",
+          "success": "Your EndPlan keys were restored.",
+          "error": "Could not restore with that phrase. Check the words and password, then try again."
+        }
+      },
+      "startFresh": {
+        "cta": "Start fresh (delete keys & my EndPlan data)",
+        "title": "Start fresh?",
+        "description": "This permanently deletes your encryption keys and all EndPlan data you own on this account. Shared EndPlans you do not own may still exist for others. This cannot be undone.",
+        "confirmLabel": "Type \"{{phrase}}\" to confirm *",
+        "confirmPlaceholder": "Type START FRESH here …",
+        "submit": "Delete and start fresh",
+        "toast": {
+          "success": "Previous keys and data were removed. Enter your sign-in password below to set up a new EndPlan.",
+          "error": "Could not complete start fresh. Try again or contact support."
+        }
+      },
+      "setupAfterFresh": {
+        "title": "Set up your EndPlan",
+        "subtitle": "Enter your sign-in password to create new encryption keys and an empty EndPlan.",
+        "button": "Continue",
+        "error": "Could not set up encryption. Check your password and try again.",
+        "toast": {
+          "success": "Your EndPlan is ready. You can open Assets, Documents, and Instructions."
+        }
+      }
+    },
+    "create": {
+      "title": "Create Your EndPlan",
+      "description": "Your EndPlan is a secure, encrypted document where you can store your final wishes, messages for loved ones, and important information to be shared when the time comes.",
+      "button": "Create Your EndPlan",
+      "encrypted": "All content is end-to-end encrypted"
+    },
+    "endplan": {
+      "title": "Your EndPlan",
+      "subtitle": "Your encrypted wishes and messages",
+      "editButton": "Edit Your EndPlan",
+      "created": "Created {{date}}",
+      "updated": "Updated {{date}}"
+    },
+    "pendingAccess": {
+      "title": "Pending Access",
+      "subtitle": "You've been invited to access these EndPlans. Click",
+      "claimButton": "Claim Access",
+      "claiming": "Claiming...",
+      "claimHelp": "Click \"Claim Access\" to receive the encryption key and view the EndPlan.",
+      "from": "From",
+      "invited": "Invited {{date}}",
+      "accepted": "Accepted {{date}}"
+    },
+    "sharedWithMe": {
+      "title": "Shared With Me",
+      "subtitle": "EndPlans from people who trust you",
+      "pageSubtitle": "EndPlans from people who trust you",
+      "featuredCardTitle": "My EndPlan",
+      "navItem": "Shared with me",
+      "from": "From {{name}}",
+      "shared": "Shared {{date}}",
+      "expires": "Expires {{date}}",
+      "emptyDescription": "When someone shares their EndPlan with you, it will appear here.",
+      "empty": {
+        "kicker": "Nothing here yet",
+        "title": "When someone names you as their Key Person, their EndPlan will appear here.",
+        "body": "You'll receive an invite by email.",
+        "previewLabel": "What you'll see here",
+        "previewInitials": "RP",
+        "previewName": "Roland Peterson",
+        "previewSubtitle": "Shared Mar 6, 2026",
+        "previewBadgeAssets": "Access now",
+        "bannerBodyLead": "Have you added your own Key Person?",
+        "bannerBodyRest": "Choose who gets your EndPlan when your transfer process starts.",
+        "setupTrustedCircle": "Add a Key Person"
+      }
+    },
+    "quickActions": {
+      "editEndPlan": "Edit EndPlan",
+      "editEndPlanDesc": "Update your encrypted document",
+      "trustedCircle": "Trusted Circle",
+      "trustedCircleDesc": "Manage who can access your EndPlan",
+      "settings": "Settings",
+      "settingsDesc": "Manage your account preferences"
+    },
+    "stats": {
+      "trustedCircle": "Trusted Circle",
+      "keyPersons": "Key Persons",
+      "sharedWithMe": "Shared With Me",
+      "lastUpdated": "Last Updated"
+    },
+    "recentActivity": {
+      "cardTitle": "Recent Activity",
+      "cardSubtitle": "Recent updates from your EndPlan and the plans where you're trusted to help.",
+      "moreOptions": "More options",
+      "timestamp": {
+        "today": "Today, {{time}}",
+        "yesterday": "Yesterday, {{time}}"
+      },
+      "tags": {
+        "assets": "Assets",
+        "policies": "Policies",
+        "documents": "Documents",
+        "instructions": "Instructions",
+        "contacts": "Contacts",
+        "trustedCircle": "Trusted Circle",
+        "endPlan": "EndPlan"
+      },
+      "loading": "Loading updates…",
+      "error": "Couldn't load your updates",
+      "retry": "Try again",
+      "empty": "Nothing to show yet",
+      "emptyHint": "Updates will appear here as you work on your EndPlan.",
+      "sectionNouns": {
+        "assets": "assets",
+        "policies": "policies",
+        "documents": "documents",
+        "instructions": "instructions",
+        "contacts": "contacts"
+      },
+      "vault": {
+        "created": {
+          "title": "You started an EndPlan"
+        },
+        "updated": {
+          "title": "You updated your EndPlan",
+          "titleVaultName": "You updated {{vaultName}}"
+        },
+        "deleted": {
+          "title": "You removed an EndPlan",
+          "titleVaultName": "You removed {{vaultName}}"
+        }
+      },
+      "section": {
+        "created": {
+          "titleWithSection": "You added new {{section}}",
+          "titleWithItem": "You added {{item}}",
+          "titleFallback": "You added a new item"
+        },
+        "updated": {
+          "titleWithSection": "You updated your {{section}}",
+          "titleWithItem": "You updated your {{item}}",
+          "titleFallback": "You updated an item"
+        },
+        "deleted": {
+          "titleWithSection": "You removed {{section}}",
+          "titleWithItem": "You removed {{item}}",
+          "titleFallback": "You removed an item"
+        }
+      },
+      "access": {
+        "granted": {
+          "title": "You shared access",
+          "titleRole": "You shared {{role}} access"
+        },
+        "revoked": {
+          "title": "You removed access",
+          "titleRole": "You removed {{role}} access"
+        }
+      },
+      "invitation": {
+        "sent": {
+          "title": "You sent an invite",
+          "titleEmail": "You sent an invite to {{email}}"
+        },
+        "released": {
+          "title": "You released an invite",
+          "titleEmail": "You released an invite to {{email}}"
+        },
+        "releasedBulk": {
+          "title": "You released {{count}} invites"
+        },
+        "accepted": {
+          "title": "Someone joined your circle",
+          "titleRole": "A {{role}} joined your circle"
+        },
+        "declined": {
+          "title": "Someone declined your invite",
+          "titleRole": "A {{role}} declined your invite"
+        },
+        "cancelled": {
+          "title": "You cancelled an invite",
+          "titleEmail": "You cancelled an invite to {{email}}"
+        }
+      },
+      "trustedCircle": {
+        "memberAdded": {
+          "title": "Someone joined your circle",
+          "titleRole": "A {{role}} joined your circle"
+        },
+        "memberUpdated": {
+          "title": "You updated a circle member",
+          "titleRole": "You updated a {{role}}"
+        },
+        "memberRemoved": {
+          "title": "You removed someone from your circle",
+          "titleRole": "You removed a {{role}} from your circle"
+        }
+      },
+      "fallback": {
+        "title": "Update recorded"
+      }
+    },
+    "netWorth": {
+      "cardTitle": "Net Worth",
+      "cardSubtitle": "Overview of your total assets across all uploaded account.",
+      "totalLabel": "Total",
+      "loading": "Loading net worth…",
+      "error": "Couldn't load net worth",
+      "retry": "Try again",
+      "locked": "Unlock your encryption keys to view net worth.",
+      "noValueColumns": "No value columns yet",
+      "noValueColumnsHint": "Add a Value column to your asset categories to see net worth here.",
+      "empty": "No asset values yet",
+      "emptyHint": "Enter values on your assets to build your net worth chart.",
+      "unnamedAsset": "Unnamed asset",
+      "otherAssets": "Other assets"
+    },
+    "navTour": {
+      "next": "Next",
+      "previous": "Previous",
+      "done": "Done",
+      "skip": "Skip tour",
+      "steps": {
+        "dashboard": {
+          "title": "Your EndPlan Dashboard",
+          "description": "This is where your EndPlan comes together. As you add documents and set up each section, you'll see everything in one place right here."
+        },
+        "trustedCircle": {
+          "title": "Your Trusted Circle",
+          "description": "Invite the people you trust to access your EndPlan when it matters. You choose who's in, what they can see, and when they see it. Nothing is shared without your say-so."
+        },
+        "transferProcess": {
+          "title": "Your Transfer Process",
+          "description": "This is how EndPlan knows when to act. You choose how long you can be inactive. If you don't respond to reminders, we'll start your transfer using your settings."
+        },
+        "vaultSections": {
+          "title": "What your EndPlan covers",
+          "description": "Assets and documents. Each area holds a different part of your life. Add to them at your own pace."
+        }
+      }
+    },
+    "recoveryPhraseSetup": {
+      "kicker": "Security setup",
+      "titlePassword": "Save your recovery key",
+      "titlePhrase": "Save your recovery key",
+      "introPassword": "Your keys are not unlocked in this browser. Enter your account password to generate a 12-word recovery phrase.",
+      "introPhrase": "This is the only way to restore access to your EndPlan if you are ever locked out. EndPlan cannot recover it for you — store it somewhere safe before continuing.",
+      "introPhraseSavePassword": "Enter your account password once below so we can encrypt and save this phrase with your keys. EndPlan never stores your password.",
+      "passwordLabel": "Account password",
+      "passwordPlaceholder": "Enter your password",
+      "passwordRequired": "Enter your password.",
+      "passwordInvalid": "That password does not match your keys. Try again.",
+      "ctaGenerate": "Generate recovery phrase",
+      "remindLater": "Remind me later",
+      "phraseLabel": "Your 12-word recovery phrase",
+      "copyAll": "Copy all words",
+      "downloadPdf": "Download as PDF",
+      "warning": "Never share this key with anyone, including EndPlan support. Anyone with this key can access your EndPlan.",
+      "checkbox": "I've written down my recovery key and stored it in a safe place. I understand EndPlan cannot recover it.",
+      "ctaContinue": "Continue to my EndPlan",
+      "printTitle": "EndPlan recovery phrase",
+      "printSubtitle": "Store this page in a safe place. Never share it.",
+      "printFooter": "Never share this key. Anyone with it can access your encrypted EndPlan.",
+      "toast": {
+        "copied": "Recovery phrase copied.",
+        "copyError": "Could not copy. Copy the words manually.",
+        "saved": "Recovery phrase saved to your account.",
+        "saveError": "Could not save the recovery phrase. Try again.",
+        "vaultBackupFailed": "Your recovery phrase was saved to your account, but an encrypted backup could not be written to your EndPlan. Save the phrase somewhere safe. If this keeps happening, sign out and sign back in, then try again.",
+        "deferError": "Could not snooze. Try again.",
+        "printBlocked": "Could not open the print window. Allow pop-ups for this site, then try “Download as PDF” again."
+      }
+    },
+    "recoveryPhraseDisclosure": {
+      "kicker": "Security setup",
+      "title": "Save your recovery key",
+      "intro": "Your account is secured with a 12-word recovery phrase. Copy it and store it somewhere safe — it is also saved encrypted in your EndPlan for your reference when signed in.",
+      "loading": "Loading your recovery phrase…",
+      "loadError": "We could not read your recovery backup. You can still manage recovery from Settings → Data & privacy.",
+      "ctaContinue": "Continue to my EndPlan",
+      "toast": {
+        "copied": "Recovery phrase copied.",
+        "copyError": "Could not copy. Copy the words manually.",
+        "acknowledged": "Thanks — you can view this phrase later from Settings when signed in.",
+        "saveError": "Could not save your progress. Try again.",
+        "deferError": "Could not snooze. Try again."
+      }
+    },
+    "keyPersonPrompt": {
+      "title": "{{name}} organised their most important documents for the people they love.",
+      "subtitle": "Now you've seen what that looks like, wouldn't you want to do the same for the people who matter to you?",
+      "cta": "Start your own EndPlan",
+      "sidebarKicker": "Your turn",
+      "sidebarTitle": "Start Your Own EndPlan",
+      "sidebarSubtitle": "{{name}} did this for the people they love. You can do the same.",
+      "sidebarCta": "Start your EndPlan",
+      "roleForOwnerKicker": "Key person for",
+      "someone": "Someone",
+      "dismissPrefix": "Not ready yet?",
+      "dismissAction": "Continue for free",
+      "startError": "We couldn't save your setup progress, but you can still choose a plan.",
+      "dismissError": "We couldn't save your preference. Please try again."
+    },
+    "inactivityAccessBanner": {
+      "title": "{{name}}'s plan is now available to you",
+      "subtitle": "He prepared everything you might need. His wishes, his documents, his instructions. Take the time you need.",
+      "cta": "Access Now"
+    },
+    "recovery": {
+      "flow": {
+        "stepLabel": "STEP {{current}} / {{total}}",
+        "step1": {
+          "title": "Verify it's you",
+          "subtitle": "For security, confirm your identity before you continue.",
+          "greetingNamed": "Good to see you, {{name}}",
+          "greetingGeneric": "Good to see you",
+          "intro": "A lot happened while you were away. Before we fill you in, we just need to confirm it's you.",
+          "securityCallout": "This keeps your plan secure. We'll walk you through everything once you've verified.",
+          "sendCodeButton": "Send verification code",
+          "sendCodeHint": "We'll email a 6-digit code to",
+          "codeSentToPrefix": "We sent a 6-digit code to",
+          "emailLabel": "Verification code sent to",
+          "codeSent": "Verification code sent. Check your inbox.",
+          "resend": "Resend code",
+          "resendSending": "Sending…",
+          "resendIn": "Resend in {{seconds}}s",
+          "verifyButton": "Verify",
+          "sendFailed": "We couldn't send the verification code. Please try again.",
+          "verifyFailed": "Invalid or expired code. Please try again."
+        },
+        "step2": {
+          "title": "Welcome back",
+          "subtitle": "We looked after things while you were away. Here's what to know.",
+          "welcomeNamed": "Welcome back, {{name}}. We're really glad you're here.",
+          "welcomeGeneric": "Welcome back. We're really glad you're here.",
+          "whatHappened": "WHAT HAPPENED",
+          "list1": "We hadn't heard from you for {{days}} days",
+          "list2Fallback": "Your Key Person received access to your plan.",
+          "list2suffixOne": " received access to your plan as your Key Person.",
+          "list2suffixOther": " received access to your plan as your Key People.",
+          "list3": "Your assets, documents, policies etc are safe and unchanged",
+          "body": "Before anything else, choose how you want your EndPlan access handled now.",
+          "continue": "Continue"
+        },
+        "step3": {
+          "title": "Choose what happens next",
+          "subtitle": "Pick one option to continue to your dashboard.",
+          "restore": {
+            "title": "Restore EndPlan",
+            "description": "Remove the temporary lock. Access-now key persons stay the same, and in-end key persons that became available move back to deferred.",
+            "cta": "Restore EndPlan"
+          },
+          "keep": {
+            "title": "Keep trusted circle involved for now",
+            "description": "Remove the lock and keep all current trusted-circle access exactly as it is.",
+            "cta": "Keep trusted circle involved"
+          },
+          "resolving": "Saving your choice...",
+          "resolveFailed": "We couldn't save your choice. Please try again."
+        }
+      }
+    },
+    "welcome": {
+      "flow": {
+        "close": "Close",
+        "continue": "Continue",
+        "previous": "Previous",
+        "goToEndplan": "Go to my EndPlan",
+        "stepLabel": "STEP {{current}} / {{total}}",
+        "skipConfirm": {
+          "title": "Skip onboarding?",
+          "description": "You can skip this intro and start using EndPlan now. Setup Progress will still guide you as you build your plan.",
+          "continueOnboarding": "Continue onboarding",
+          "skipForNow": "Skip for now"
+        },
+        "step1": {
+          "title": "EndPlan is your secure space for legacy planning",
+          "subtitle": "EndPlan helps you organize important parts of your life so the right people can access them if something happens to you.",
+          "items": {
+            "documents": {
+              "title": "Important documents",
+              "description": "Keep wills, IDs, policies, and records together."
+            },
+            "instructions": {
+              "title": "Instructions for loved ones",
+              "description": "Leave notes and steps for people you trust."
+            },
+            "security": {
+              "title": "Private and secure by design",
+              "description": "Your plan is protected with zero-knowledge encryption."
+            }
+          }
+        },
+        "step2": {
+          "title": "Your EndPlan stays private until it is truly needed",
+          "subtitle": "You choose who can access it and when. EndPlan checks in before anything is shared.",
+          "badge": "Invites do not unlock access.",
+          "items": {
+            "checkIn": {
+              "title": "EndPlan checks in",
+              "description": "Your sign-ins keep the plan private."
+            },
+            "reminders": {
+              "title": "Reminders come first",
+              "description": "Your safety window prevents sudden access."
+            },
+            "access": {
+              "title": "Loved ones get the right access",
+              "description": "Only approved people see approved sections."
+            }
+          }
+        },
+        "step3": {
+          "title": "Build a first EndPlan for your family and loved ones",
+          "subtitle": "Start with what would help the people closest to you feel guided and cared for.",
+          "items": {
+            "trust": {
+              "title": "Choose someone your family trusts",
+              "description": "A loved one who can help when people need calm direction."
+            },
+            "documents": {
+              "title": "Add what your loved ones would need",
+              "description": "A will, policy, ID, account, or property record they should be able to find."
+            },
+            "guidance": {
+              "title": "Leave guidance in your own words",
+              "description": "Tell them where to begin, who to call, and what matters most to you."
+            }
+          }
+        }
+      }
+    }
+  },
+  "sharedVault": {
+    "breadcrumb": "Shared EndPlan",
+    "displayName": "{{name}}’s EndPlan",
+    "sectionsTitle": "Sections shared with you",
+    "sectionsLoading": "Loading sections...",
+    "sectionsSubtitle": "These are the EndPlan sections you have access to.",
+    "noSections": "No sections have been shared with you yet.",
+    "emptySection": "No items in this section.",
+    "decryptFailed": "Could not decrypt this section.",
+    "grantedLater": "Access to EndPlan content will only be granted after the verified passing of the EndPlan owner.",
+    "deferredAccess": {
+      "title": "This EndPlan is sealed and ready",
+      "badge": "Access in the End",
+      "message": "{{name}} has organised this EndPlan for you. You'll be notified if they haven't checked in."
+    },
+    "awaitingKeyShare": {
+      "title": "Encrypted access not shared yet",
+      "message": "{{name}}’s release is recorded, but they still need to share EndPlan access from their account (Trusted Circle → share access) before you can open sections here."
+    },
+    "postReleaseRecovery": {
+      "title": "Temporarily unavailable",
+      "message": "{{name}} is finishing account recovery after a release. Shared sections will open again once they complete that step."
+    },
+    "pendingTransfer": {
+      "title": "This EndPlan is not available yet",
+      "message": "EndPlan will be shared with you once transfer is completed by {{name}}."
+    },
+    "inactivityBanner": {
+      "title": "We haven't heard from {{name}} in {{days}} days",
+      "subtitle": "You're their Key Person. Their plan is here if you need it."
+    },
+    "securityDescription": "This content was decrypted locally on your device. No one else, including EndPlan, can read it.",
+    "states": {
+      "loading": "Decrypting EndPlan...",
+      "errorTitle": "Unable to View EndPlan",
+      "notFoundTitle": "EndPlan Not Found",
+      "notFoundMessage": "This EndPlan doesn't exist or you no longer have access to it.",
+      "decryptUnavailableTitle": "Unable to View EndPlan",
+      "decryptUnavailableMessage": "Unable to decrypt this EndPlan. Please unlock your keys and try again."
+    }
+  },
+  "billing": {
+    "actions": {
+      "upgrade": "Upgrade",
+      "restoreAccess": "Restore access",
+      "manage": "Manage",
+      "cancel": "Cancel"
+    },
+    "sidebarUserBadge": {
+      "freeTrialDaysLeft_one": "Free trial · {{count}} day left",
+      "freeTrialDaysLeft_other": "Free trial · {{count}} days left"
+    },
+    "header": {
+      "title": "Plans",
+      "activeSubtitle": "Manage your plan and billing settings.",
+      "trialSubtitle": "Your trial ends on {{date}}. Choose a plan to keep full access.",
+      "endedSubtitle": "Your trial has ended. Choose a plan to continue using EndPlan.",
+      "chooserSubtitle": "Choose the best plan for you and your workspace."
+    },
+    "trialBanner": {
+      "subscriptionEnded": "Your subscription has ended. Your EndPlan is in read-only mode. Renew to restore full access.",
+      "endsOn_one": "{{count}} day left on your free trial. After {{date}}, your EndPlan will be locked.",
+      "endsOn_other": "{{count}} days left on your free trial. After {{date}}, your EndPlan will be locked.",
+      "endedOn": "Your free trial ended {{date}}. Your EndPlan is in read-only mode.",
+      "keyPersonWelcomeWithName": "Welcome to EndPlan, {{firstName}}. You're listed as {{ownerName}}'s trusted Key Person. Your account is free.",
+      "keyPersonWelcomeNoName": "Welcome to EndPlan. You're listed as {{ownerName}}'s trusted Key Person. Your account is free.",
+      "keyPersonWelcomeWithNameEstablished": "Welcome to EndPlan, {{firstName}}. You're listed as {{ownerName}}'s trusted Key Person.",
+      "keyPersonWelcomeNoNameEstablished": "Welcome to EndPlan. You're listed as {{ownerName}}'s trusted Key Person."
+    },
+    "currentPlan": {
+      "title": "Current plan",
+      "trialDescription": "You are currently on the Trial plan.",
+      "inactiveDescription": "Your trial has ended. Choose a plan below to continue.",
+      "noneDescription": "You currently do not have an active subscription.",
+      "paidDescription": "You are currently on the {{plan}} plan.",
+      "cancelsOn": "Cancels on {{date}}",
+      "renewsOn": "Renews on {{date}}",
+      "trialEndsOn": "Trial ends on {{date}}",
+      "tier": {
+        "basic": "Basic",
+        "pro": "Pro",
+        "paid": "Paid"
+      },
+      "interval": {
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      },
+      "planName": "{{tier}} {{interval}}"
+    },
+    "cancelModal": {
+      "title": "Cancel Subscription",
+      "subtitle": "Are you sure you want to cancel?",
+      "description": "Your subscription will remain active until {{date}}. After that, you'll lose access to premium features.",
+      "keep": "Keep Subscription",
+      "confirm": "Yes, Cancel"
+    },
+    "notifications": {
+      "checkoutError": "Failed to start checkout. Please try again.",
+      "portalError": "Failed to open billing portal. Please try again.",
+      "portalRedirectForPlanChange": "Opening billing portal to change your plan…",
+      "cancelSuccess": "Subscription will be canceled at the end of your billing period.",
+      "cancelError": "Failed to cancel subscription. Please try again."
+    },
+    "success": {
+      "title": "Payment Successful!",
+      "subtitle": "Thank you for subscribing to EndPlan. Your subscription is now active and you have full access to all features.",
+      "primary": "Go to Dashboard",
+      "secondary": "View Subscription"
+    },
+    "cancelPage": {
+      "title": "Checkout Cancelled",
+      "subtitle": "Your checkout was cancelled. No payment was processed. You can try again whenever you're ready.",
+      "primary": "Try Again",
+      "secondary": "Back to Dashboard"
+    }
+  },
+  "shell": {
+    "sysDemo": {
+      "brandName": "Sys Demo",
+      "logoAlt": "Sys Demo logo"
+    },
+    "sysExportPdf": {
+      "label": "Export PDF",
+      "ariaLabel": "Export vault as PDF",
+      "comingSoon": "PDF export is not available yet."
+    },
+    "footer": {
+      "support": "Support",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "copyright": "© {{year}} EndPlan, Inc."
+    }
+  },
+  "endplan": {
+    "create": {
+      "title": "Create Your EndPlan",
+      "description": "Your EndPlan is your personal space to record wishes, messages, and important information that will be shared with your trusted circle when the time comes.",
+      "upgradeNoticePrefix": "Upgrade your plan",
+      "upgradeNoticeSuffix": "to create more EndPlans.",
+      "nameLabel": "Name (optional)",
+      "namePlaceholder": "e.g., My Final Wishes, Letters to Family",
+      "descriptionLabel": "Description (optional)",
+      "descriptionPlaceholder": "A brief description of what this EndPlan contains",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Start writing your message here...\n\nThis could include:\n• Final wishes and instructions\n• Messages to loved ones\n• Important account information\n• Personal notes and memories",
+      "messageHelp": "Write your message that will be securely encrypted and stored.",
+      "button": "Create EndPlan",
+      "keysError": "Encryption keys not available. Please log out and log in again.",
+      "userError": "User information not available. Please log out and log in again.",
+      "contentError": "Please enter some content for your EndPlan",
+      "success": "EndPlan created successfully!"
+    },
+    "edit": {
+      "title": "Edit Your EndPlan",
+      "description": "Update your encrypted wishes, messages, and instructions.",
+      "titleLabel": "Title",
+      "titlePlaceholder": "My EndPlan",
+      "descriptionLabel": "Description (optional)",
+      "descriptionPlaceholder": "A brief description of this EndPlan",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Write your message here. This could include:\n\n• Final wishes and instructions\n• Messages to loved ones\n• Important account information\n• Personal notes and memories\n• Anything you want to preserve and share",
+      "messageHelp": "Your content is encrypted locally before being stored. No one, including us, can read it.",
+      "button": "Save EndPlan",
+      "unsavedChanges": "Unsaved changes",
+      "leaveConfirm": "You have unsaved changes. Are you sure you want to leave?",
+      "decrypting": "Decrypting your EndPlan...",
+      "success": "EndPlan saved successfully!"
+    },
+    "encryption": {
+      "title": "End-to-End Encrypted",
+      "description": "Your EndPlan is encrypted on your device before being stored. Only you and the people you explicitly grant access to can read its contents.",
+      "descriptionEdit": "Your EndPlan is encrypted on your device before being saved. The encryption key is protected by your password and only shared with people you explicitly grant access to."
+    },
+    "keysRequired": {
+      "title": "Encryption Keys Required",
+      "description": "Your encryption keys are not available. Please log out and log in again to reload them.",
+      "button": "Back to Dashboard"
+    },
+    "release": {
+      "title": "Simulate Release",
+      "description": "Send or resend invitations to your recipients.",
+      "button": "Send to Recipients",
+      "buttonCount": "Send to {{count}} Recipient",
+      "buttonCount_other": "Send to {{count}} Recipients",
+      "recipients": "Recipients:",
+      "notSent": "Not yet sent",
+      "awaitingAcceptance": "Sent - awaiting acceptance",
+      "help": "Recipients will receive an email invitation. You can resend at any time. They must accept and create an account to access your EndPlan.",
+      "confirmSend": "This will send invitation emails to {{count}} recipient(s). Continue?",
+      "success": "Sent invitations to {{count}} recipient(s)",
+      "noRecipients": "No recipients to send to",
+      "error": "Failed to send invitations"
+    },
+    "shareAccess": {
+      "title": "Share EndPlan access",
+      "setupRequired": "Setup Required:",
+      "setupDescription": "Your EndPlan was created before the release feature was enabled. Please save your EndPlan again to enable sharing with recipients.",
+      "description": "These recipients have accepted their invitations and are ready to receive EndPlan access. Click \"Share\" to release the encrypted key that allows them to decrypt your EndPlan.",
+      "shareButton": "Share Access",
+      "shared": "Shared",
+      "accepted": "Accepted {{date}}",
+      "confirmShare": "This will share your EndPlan access with {{name}}. They will be able to decrypt and read your EndPlan. Continue?",
+      "success": "EndPlan access shared with {{name}}",
+      "error": "Failed to share EndPlan access",
+      "help": "Sharing grants the recipient cryptographic access to decrypt your EndPlan. This action uses the Release Service for secure key transfer."
+    }
+  },
+  "trustedCircle": {
+    "keyPersonGate": {
+      "title": "Start your EndPlan",
+      "body": "To add Trusted Circle members you need your own EndPlan. It takes a few seconds to set up.",
+      "startCta": "Start your own EndPlan",
+      "continueFree": "Continue free for now"
+    },
+    "title": "Trusted Circle",
+    "subtitle": "Manage who can access your EndPlan",
+    "keyPersonAccess": {
+      "kicker": "Key Person Access",
+      "title": "Choose who can receive EndPlan access",
+      "subtitle": "Invite someone you trust. You choose when they can access your EndPlan.",
+      "atLimit": "Plan limit reached.",
+      "upgradeLink": "Upgrade to invite more",
+      "cardSubtitle": "Your trusted contact for EndPlan access",
+      "seatCount": "{{used}} of {{max}}",
+      "planLimitSeats": "· {{current}} of {{max}} key persons",
+      "accessTimingHint": "Choose whether they get access now or only when the time comes.",
+      "emptyMessage": "No Key Person added yet.",
+      "emptyCta": "Add your first Key Person",
+      "inviteAria": "Add Key Person",
+      "helpAria": "Help for {{role}}",
+      "showMore": "Show more ({{count}})",
+      "showLess": "Show less",
+      "status": {
+        "pending": "Pending",
+        "active": "Active"
+      },
+      "howItWorks": {
+        "title": "How the invite works",
+        "steps": {
+          "sendInvite": {
+            "title": "Send invite",
+            "description": "Your Key Person receives an email invitation."
+          },
+          "pending": {
+            "title": "Pending",
+            "description": "Your Key Person appears here until they accept the invite."
+          },
+          "active": {
+            "title": "Active",
+            "description": "After they accept, access starts based on your choice: now, or when your transfer process begins."
+          }
+        }
+      }
+    },
+    "keyPersonInvite": {
+      "stepLabel": "Step {{current}} of {{total}}",
+      "messageHint": "Included in the invitation email to your Key Person.",
+      "step1": {
+        "title": "Who do you want to add?",
+        "subtitle": "We will send your Key Person an email invitation to join your EndPlan."
+      },
+      "step2": {
+        "title": "What is their relationship to you?",
+        "subtitle": "Relationship, phone, and personal message are optional.",
+        "relationshipLabel": "Relationship (optional)",
+        "relationshipPlaceholder": "e.g. Spouse, Child, Friend"
+      },
+      "step3": {
+        "title": "When can your Key Person access your EndPlan?",
+        "subtitle": "Access now, or when your transfer process starts.",
+        "accessNowDescription": "Your Key Person can view your EndPlan as soon as they accept the invite.",
+        "accessInEndDescription": "Access starts when your transfer process begins. This is the most common choice."
+      }
+    },
+    "readOnly": {
+      "banner": "Invites and member changes are disabled until you renew. You can still review who is listed below.",
+      "cannotInvite": "Subscribe or restart your free trial to invite a Key Person or change your trusted circle.",
+      "emptyRole": "No {{role}} yet. You can add people after you renew your subscription.",
+      "receivedInvitations": "You can accept invitations you received below without renewing."
+    },
+    "backToDashboard": "Back to Dashboard",
+    "inviteButton": "Invite Someone",
+    "inviteForm": {
+      "title": "Invite to Trusted Circle",
+      "subtitle": "Send an invitation to join your trusted circle",
+      "circleInfo": "Add people who should receive access to your EndPlan if something happens to you — e.g. family, trusted friends, legal representatives.",
+      "fullNameLabel": "Full name",
+      "fullNamePlaceholder": "Enter full name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "email@example.com",
+      "nameLabel": "Name (optional)",
+      "namePlaceholder": "Their name",
+      "relationshipLabel": "Relationship",
+      "relationshipPlaceholder": "Spouse, Child, Friend, etc.",
+      "phoneLabel": "Phone number (optional)",
+      "phonePlaceholder": "+1 (415) 555-0124",
+      "phoneInvalid": "Enter a valid phone number with 8–15 digits. You can include a country code, spaces, or dashes.",
+      "roleLabel": "Role",
+      "accessTypeLabel": "Type of access",
+      "accessAfterRelease": "Only after EndPlan is released (Default)",
+      "accessTimeBased": "Time-based access",
+      "accessUnlimited": "Unlimited (you can revoke at any time)",
+      "accessTimingLabel": "When they can access shared EndPlan content",
+      "accessNow": "Access now",
+      "accessInEnd": "Access in the end",
+      "nameRequired": "Full name is required",
+      "emailRequired": "A valid email address is required",
+      "emailInvalid": "Enter a valid email address, like name@example.com.",
+      "messageLabel": "Personal message (optional)",
+      "messagePlaceholder": "Add a personal message to your invitation...",
+      "sectionsLabel": "EndPlan sections they can access",
+      "sectionsHint": "Choose which sections this person can see. They will only have access to the sections you select.",
+      "addPersonHint": "You can add more people later.",
+      "keyPersonRequired": "Add a Key Person first before inviting a Recipient.",
+      "sectionsModal": {
+        "title": "Sections shared with this member",
+        "hint": "Choose which EndPlan sections this person can see. Uncheck to revoke access to a section.",
+        "save": "Save",
+        "saved": "Sections updated successfully"
+      },
+      "sendButton": "Send Invitation",
+      "addPersonButton": "Add person",
+      "success": "Invitation sent successfully!",
+      "linkCopied": "Invite link copied to clipboard"
+    },
+    "roles": {
+      "key_person": "Key Person",
+      "key_person_desc": "Full access to your EndPlan when the time comes (invite sent immediately)",
+      "recipient": "Recipient",
+      "recipient_desc": "Receives your EndPlan after you release it (invite sent on release)",
+      "advisor": "Advisor",
+      "advisor_desc": "Time-limited read-only access (invite sent immediately)"
+    },
+    "receivedInvitations": {
+      "title": "Invitations Received",
+      "subtitle": "People who have invited you to their trusted circle",
+      "invitedAs": "{{name}} invited you as a",
+      "acceptButton": "Accept",
+      "declineButton": "Decline",
+      "expires": "Expires {{date}}",
+      "acceptSuccess": "Invitation accepted!",
+      "declineSuccess": "Invitation declined",
+      "error": "Failed to process invitation"
+    },
+    "myCircles": {
+      "title": "Circles I'm Part Of",
+      "subtitle": "EndPlans I have access to as a trusted member",
+      "endPlanOf": "{{name}}'s EndPlan",
+      "joined": "Joined {{date}}",
+      "accessExpires": "Access expires {{date}}"
+    },
+    "members": {
+      "title": "My Trusted Circle",
+      "subtitle": "People who have access to your EndPlan",
+      "removeTitle": "Remove trusted person",
+      "removeSubtitle": "Irreversible access change",
+      "removeButton": "Remove",
+      "removeConfirm": "Are you sure you want to remove {{name}} from your trusted circle?",
+      "removeSuccess": "Member removed from trusted circle",
+      "removeError": "Failed to remove member"
+    },
+    "emptyState": {
+      "addFirstRole": "Add your first {{role}}"
+    },
+    "sentInvitations": {
+      "title": "Sent Invitations",
+      "subtitle": "People you've invited to your trusted circle",
+      "empty": "No invitations sent yet",
+      "emptyDesc": "Invite trusted people to be part of your EndPlan journey.",
+      "firstInvite": "Send Your First Invitation",
+      "cancelButton": "Cancel",
+      "cancelConfirm": "Are you sure you want to cancel this invitation?",
+      "cancelSuccess": "Invitation cancelled",
+      "cancelError": "Failed to cancel invitation",
+      "sent": "Sent {{date}}",
+      "as": "as"
+    },
+    "status": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "active": "Active",
+      "declined": "Declined",
+      "cancelled": "Cancelled",
+      "expired": "Expired"
+    },
+    "sectionsModal": {
+      "title": "Sections shared with this member",
+      "hint": "Choose which EndPlan sections this person can see. Uncheck to revoke access to a section.",
+      "save": "Save",
+      "saved": "Sections updated successfully"
+    }
+  },
+  "vault": {
+    "categoryQuotaLimitModal": {
+      "title": "Category limit reached",
+      "description": "You've used all the categories included in your current subscription. Upgrade your plan to add more.",
+      "upgrade": "Upgrade",
+      "notNow": "Not now"
+    },
+    "rowQuotaLimitModal": {
+      "title": "Row limit reached",
+      "description": "You've used all the rows included in your current subscription for this category. Upgrade your plan to add more.",
+      "upgrade": "Upgrade",
+      "notNow": "Not now"
+    },
+    "contactQuotaLimitModal": {
+      "title": "Contact limit reached",
+      "description": "You've used all the contacts included in your current subscription. Upgrade your plan to add more.",
+      "upgrade": "Upgrade",
+      "notNow": "Not now"
+    },
+    "instructionQuotaLimitModal": {
+      "title": "Instruction limit reached",
+      "description": "You've used all the instructions included in your current subscription. Upgrade your plan to add more.",
+      "upgrade": "Upgrade",
+      "notNow": "Not now"
+    },
+    "documentFileQuotaLimitModal": {
+      "title": "Document limit reached",
+      "description": "You've used all the document files included in your current subscription. Upgrade your plan to add more.",
+      "upgrade": "Upgrade",
+      "notNow": "Not now"
+    },
+    "documentFolderQuotaLimitModal": {
+      "title": "Folder limit reached",
+      "description": "You've used all the folders included in your current subscription. Upgrade your plan to add more.",
+      "upgrade": "Upgrade",
+      "notNow": "Not now"
+    },
+    "sectionPage": {
+      "noVaultBody": "Open the dashboard to create your EndPlan.",
+      "noVaultCta": "Go to Dashboard",
+      "encryptedSubtitle": "Your content is encrypted end-to-end",
+      "itemSectionReadOnlyEmptyDescription": "This section is available to view, but editing is disabled while your EndPlan is in read-only mode.",
+      "assetsSubtitle": "Fill your asset tables here. Add or remove asset categories directly from this page.",
+      "assetsReadOnlySubtitle": "Your EndPlan is in read-only mode. Review your saved asset categories and entries here.",
+      "policiesReadOnlySubtitle": "Your EndPlan is in read-only mode. Review your saved policies and legal records here.",
+      "documentsSubtitle": "Organize and upload encrypted documents by folder.",
+      "documentsReadOnlySubtitle": "Your document data is in read-only mode. Browse folders and download documents, but editing is unavailable.",
+      "journalReadOnlySubtitle": "Your EndPlan is in read-only mode. Review your saved journal entries here.",
+      "memoirReadOnlySubtitle": "Your EndPlan is in read-only mode. Review your saved memoir chapters here.",
+      "contactsSubtitle": "Keep the people who matter to your plan and the role they play in one place.",
+      "policiesSubtitle": "Fill your policy tables here. Add or remove policy categories directly from this page."
+    },
+    "contacts": {
+      "addContact": "Add contact",
+      "searchPlaceholder": "Search contacts",
+      "filterByRole": "Filter by role",
+      "allRoles": "All",
+      "countLabel": "{{count}} of {{max}} contacts",
+      "detailHeading": "Contact details",
+      "roles": {
+        "lawyer": "Lawyer",
+        "doctor": "Doctor",
+        "financial_manager": "Financial manager",
+        "power_of_attorney": "Power of attorney",
+        "other": "Other"
+      },
+      "roleDescriptions": {
+        "lawyer": "Legal documents and estate planning.",
+        "doctor": "Medical history, care context, and health.",
+        "financial_manager": "Accounts, investments, and financial handoff.",
+        "power_of_attorney": "Authorized to act on your behalf."
+      },
+      "fields": {
+        "name": "Name",
+        "role": "Role",
+        "phone": "Phone",
+        "email": "Email"
+      },
+      "consider": {
+        "title": "People to consider",
+        "subtitle": "These roles can make your plan easier to follow.",
+        "added": "Added",
+        "addRole": "Add {{role}}"
+      },
+      "list": {
+        "empty": "No contacts yet.",
+        "noMatches": "No contacts match your search."
+      },
+      "detail": {
+        "selectPrompt": "Select a contact to view their details.",
+        "backToList": "Back to contacts",
+        "notAdded": "Not added",
+        "noNotes": "No notes added."
+      },
+      "preview": {
+        "title": "Contact details will appear here",
+        "description": "Add a contact or select one from the list to review their role and contact information."
+      },
+      "empty": {
+        "title": "No contacts yet",
+        "description": "Add the people who should be listed in your EndPlan, then choose the role they have in your life.",
+        "rolesTitle": "Common roles to get started"
+      },
+      "form": {
+        "newEyebrow": "New contact",
+        "editEyebrow": "Edit contact",
+        "addTitle": "Add contact",
+        "editTitle": "Edit contact",
+        "fullNameLabel": "Full name",
+        "fullNamePlaceholder": "e.g. Sarah Mitchell",
+        "nameRequired": "Please enter a name.",
+        "roleLabel": "The role in your life",
+        "customRoleLabel": "Role description",
+        "customRolePlaceholder": "e.g. Family friend",
+        "phoneLabel": "Phone",
+        "phonePlaceholder": "(415) 555-0124",
+        "emailLabel": "Email",
+        "emailPlaceholder": "name@example.com",
+        "emailInvalid": "Please enter a valid email address.",
+        "notesLabel": "Notes (optional)",
+        "notesPlaceholder": "Add anything useful to know about this person.",
+        "encryptionNotice": "This saves the person as part of your EndPlan, encrypted end-to-end so only you and the people you trust can read it.",
+        "addContact": "Add contact",
+        "saveChanges": "Save changes"
+      },
+      "delete": {
+        "title": "Delete contact",
+        "description": "Are you sure you want to delete {{name}}? This action cannot be undone.",
+        "confirm": "Delete contact"
+      },
+      "toast": {
+        "created": "Contact added.",
+        "updated": "Contact updated.",
+        "deleted": "Contact deleted.",
+        "saveFailed": "Could not save the contact. Please try again.",
+        "deleteFailed": "Could not delete the contact. Please try again.",
+        "limitReached": "You've reached your plan limit of {{max}} contacts. Upgrade to add more.",
+        "encryptionKeysUnavailable": "Encryption keys are unavailable. Please refresh and try again."
+      }
+    },
+    "assets": {
+      "secureTitle": "Secure Your Assets",
+      "secureDescription": "Store important information about your assets, accounts, and valuable items.",
+      "whatToAdd": "What to add:",
+      "whatToAddExamples": "Bank accounts, investment portfolios, insurance policies, property deeds.",
+      "addAsset": "Add an Asset",
+      "assetType": "Asset type",
+      "assetTypePlaceholder": "Select type",
+      "assetName": "Asset name",
+      "assetNamePlaceholder": "e.g., Main Checking Account",
+      "institution": "Institution / Company",
+      "institutionPlaceholder": "Bank or company name",
+      "accountOrPolicyNumber": "Account / Policy number",
+      "accountOrPolicyPlaceholder": "Account or policy number",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "Additional details...",
+      "addAssetButton": "Add Asset",
+      "editAsset": "Edit Asset",
+      "updateAssetButton": "Update Asset",
+      "skip": "Skip",
+      "addFirst": "Add your first asset",
+      "addFirstDescription": "Record bank accounts, investments, insurance, and property.",
+      "noAssets": "No assets yet",
+      "suggestions": {
+        "title": "Start with common asset tables",
+        "subtitle": "Add the categories that help your trusted circle identify accounts, property, and policies quickly.",
+        "dismiss": "Dismiss asset suggestions",
+        "addCategory": "Add {{name}} category",
+        "added": "Added"
+      },
+      "emptyCategories": {
+        "title": "No asset categories yet",
+        "description": "Add a category like Property or Bank Account to start building asset tables for your trusted circle.",
+        "addCategory": "Add asset category",
+        "limitReached": "You reached your category limit for this plan."
+      },
+      "renameCategory": {
+        "editAriaLabel": "Rename category {{name}}",
+        "inputAriaLabel": "Category name",
+        "success": "Category name updated",
+        "error": "Failed to update category name"
+      },
+      "otherCategory": {
+        "label": "Other Assets",
+        "defaultName": "Other Assets",
+        "description": "Create a custom category for this EndPlan that you can rename."
+      },
+      "categories": {
+        "limitReached": "You can select up to {{max}} asset categories on your plan."
+      },
+      "planLimits": {
+        "rowLimitReached": "Asset row limit reached for your plan (max {{max}} per category)."
+      },
+      "cellPlaceholder": "Enter {{label}}",
+      "cellPlaceholderFallback": "value",
+      "cellSelectPlaceholder": "Select {{label}}",
+      "toast": {
+        "assetAdded": "Asset added."
+      },
+      "hydration": {
+        "loadFailed": "We couldn't load your saved asset rows. Your data has not been changed on the server. Try again, or contact support if this continues.",
+        "notReady": "Your EndPlan is still preparing. Please wait a moment and try again.",
+        "retry": "Try again"
+      },
+      "addTableColumn": "Add column",
+      "removeCategoryDialog": {
+        "title": "Remove asset category",
+        "subtitle": "This removes the table from your EndPlan",
+        "subtitleCustom": "This permanently deletes this custom category",
+        "description": "Are you sure you want to remove \"{{name}}\" from your EndPlan? Existing records in this category will no longer be shown here.",
+        "descriptionCustom": "Are you sure you want to permanently delete \"{{name}}\"? It will be removed from your EndPlan and will no longer appear when adding categories.",
+        "confirm": "Remove category",
+        "confirmDelete": "Delete category",
+        "deletedToast": "Custom category deleted",
+        "deleteError": "Failed to delete custom category"
+      },
+      "deleteColumnDialog": {
+        "title": "Delete column",
+        "subtitle": "This removes the column from this asset category",
+        "description": "Delete \"{{column}}\" from {{category}}? Values in this column for all rows will be removed.",
+        "confirm": "Delete column"
+      },
+      "customColumn": {
+        "newColumnDefaultName": "New Column",
+        "passwordDefaultName": "Password",
+        "valueDefaultName": "Value"
+      },
+      "fieldTypes": {
+        "text": "Text",
+        "textarea": "Long text",
+        "number": "Number",
+        "value": "Value (money)",
+        "date": "Date",
+        "select": "Select",
+        "password": "Password",
+        "contact": "Contact"
+      },
+      "contacts": {
+        "fieldTypeLabel": "Contact",
+        "attachAction": "Attach contact",
+        "unavailableLabel": "Contact unavailable",
+        "removeAction": "Remove contact",
+        "searchPlaceholder": "Search contacts…",
+        "searchNoResults": "No contacts match your search.",
+        "emptyList": "No contacts yet. Add contacts in the Contacts section first.",
+        "noSubtitle": "No role",
+        "linkedSuccess": "Contact linked",
+        "pickerTitle": "Attach contact"
+      },
+      "passwordField": {
+        "maskedDisplay": "••••••••",
+        "showPasswordAria": "Show password",
+        "hidePasswordAria": "Hide password"
+      },
+      "duplicateColumnDialog": {
+        "title": "Column name already in use",
+        "subtitle": "This category already has a column with this label",
+        "description": "A column named \"{{column}}\" already exists in {{category}}. You can still add another column with the same name, but it may be confusing. Continue?",
+        "confirm": "Add column anyway"
+      },
+      "deleteRowDialog": {
+        "title": "Delete asset row",
+        "subtitle": "This removes the row from this category",
+        "rowLabel": "Row {{number}}",
+        "description": "Remove {{row}} from {{category}}? All values in this row will be deleted. This cannot be undone.",
+        "confirm": "Delete row",
+        "deleteRowButtonAriaLabel": "Delete row",
+        "rowActionsColumnAriaLabel": "Row actions"
+      },
+      "attachments": {
+        "fieldTypeLabel": "Document",
+        "emptyLabel": "No document attached",
+        "unavailableLabel": "Document unavailable",
+        "encryptedFallbackName": "Encrypted document",
+        "downloadNameFallback": "document",
+        "closeDrawerAriaLabel": "Close document drawer",
+        "drawerEmptyDescription": "Attach a document to this asset field.",
+        "drawerPreviewLabel": "{{type}} attached to this asset field.",
+        "attachAction": "Attach document",
+        "attachFileAction": "Attach File",
+        "replaceAction": "Replace document",
+        "uploadFromDeviceTab": "Upload from device",
+        "linkFromDocumentsTab": "Link from Documents",
+        "uploadPrompt": "Choose a file or drag and drop it here.",
+        "uploadHint": "JPEG, PNG, PDF, and MP4 formats.",
+        "uploadHintWithLimit": "JPEG, PNG, PDF, and MP4 formats, up to {{size}}.",
+        "browseFilesAction": "Browse files",
+        "searchDocumentsPlaceholder": "Search documents..",
+        "searchNoResults": "No documents match your search.",
+        "folderFileCount_one": "{{count}} file",
+        "folderFileCount_other": "{{count}} files",
+        "folderHasNoFiles": "No files in this folder.",
+        "linkDocumentAction": "Link Document",
+        "downloadAction": "Download",
+        "deleteAction": "Delete",
+        "fileTypeLabel": "File type",
+        "sizeLabel": "Size",
+        "uploadedLabel": "Uploaded",
+        "documentTypeDefaultLabel": "Document",
+        "documentTypeFormat": "{{type}} document",
+        "vaultMissingError": "EndPlan not found",
+        "keysUnavailableError": "Encryption keys not available",
+        "encryptedFallbackFolderName": "Encrypted folder",
+        "downloadNotReadyError": "Document is not ready for download",
+        "downloadFailedError": "Failed to download document",
+        "offlineUploadError": "You must be online to attach documents",
+        "unsupportedTypeError": "Unsupported file type",
+        "maxSizeExceededError": "This file exceeds your plan limit of {{size}}.",
+        "uploadedSuccess": "Document attached",
+        "linkedSuccess": "Document linked",
+        "uploadFailedError": "Failed to attach document",
+        "uploadToFolderAction": "Upload a file",
+        "newFolderAction": "New folder",
+        "createFolderInRootDescription": "Create a new encrypted folder at the top level of your documents library.",
+        "createFolderInParentDescription": "Create a new encrypted folder inside \"{{name}}\".",
+        "documentsOwnerOnlyHint": "Only the EndPlan owner can upload files or create folders from here. You can still link existing documents.",
+        "documentsOwnerOnlyError": "Only the EndPlan owner can modify documents.",
+        "folderNameRequiredError": "Folder name is required",
+        "folderCreatedSuccess": "Folder created",
+        "createFolderFailedError": "Failed to create folder",
+        "vaultDocumentUploadedSuccess": "Document added to your library",
+        "vaultDocumentUploadFailedError": "Failed to upload document"
+      },
+      "readOnlyEmptyState": "No asset categories are selected yet.",
+      "readOnlyEmptyCategory": "No items in this category yet.",
+      "readOnlyRowCount_one": "{{count}} row",
+      "readOnlyRowCount_other": "{{count}} rows"
+    },
+    "policies": {
+      "secureTitle": "Secure Your Policies",
+      "secureDescription": "Store insurance and legal documents. Keep policy numbers and contacts in one place.",
+      "whatToAdd": "What to add:",
+      "whatToAddExamples": "Life insurance, health insurance, property insurance, legal agreements, power of attorney.",
+      "addPolicy": "Add a policy",
+      "policyType": "Policy / document type",
+      "policyTypePlaceholder": "Select type",
+      "nameTitle": "Name / title",
+      "nameTitlePlaceholder": "e.g., MetLife term life policy",
+      "providerIssuer": "Provider / issuer",
+      "providerPlaceholder": "Company or law firm name",
+      "policyNumber": "Policy / reference number",
+      "policyNumberPlaceholder": "Policy or document number",
+      "beneficiary": "Beneficiary / relevant party",
+      "beneficiaryPlaceholder": "Who it's for or who holds it",
+      "expiryRenewal": "Expiry / renewal date",
+      "expiryPlaceholder": "If applicable",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "Contact, location of physical copy, etc.",
+      "addPolicyButton": "Add policy",
+      "editPolicy": "Edit Policy",
+      "updatePolicyButton": "Update Policy",
+      "skip": "Skip",
+      "addFirst": "Add your first policy",
+      "addFirstDescription": "Document insurance policies and legal agreements.",
+      "noItems": "No policies yet",
+      "addAsset": "Add an Policy",
+      "assetType": "Policy type",
+      "assetTypePlaceholder": "Select type",
+      "assetName": "Policy name",
+      "assetNamePlaceholder": "e.g., Main Checking Account",
+      "institution": "Institution / Company",
+      "institutionPlaceholder": "Bank or company name",
+      "accountOrPolicyNumber": "Account / Policy number",
+      "accountOrPolicyPlaceholder": "Account or policy number",
+      "addAssetButton": "Add Policy",
+      "editAsset": "Edit Policy",
+      "updateAssetButton": "Update Policy",
+      "noAssets": "No policies yet",
+      "suggestions": {
+        "title": "Start with common policy tables",
+        "subtitle": "Add the policy categories stored for your EndPlan, such as life, health, and home cover.",
+        "dismiss": "Dismiss policy suggestions",
+        "addCategory": "Add {{name}} category",
+        "added": "Added"
+      },
+      "emptyCategories": {
+        "title": "No policy categories yet",
+        "description": "Add a category like Life or Health to start building policy tables for your trusted circle.",
+        "addCategory": "Add policy category",
+        "limitReached": "You reached your category limit for this plan."
+      },
+      "renameCategory": {
+        "editAriaLabel": "Rename category {{name}}",
+        "inputAriaLabel": "Category name",
+        "success": "Category name updated",
+        "error": "Failed to update category name"
+      },
+      "otherCategory": {
+        "label": "Other Policies",
+        "defaultName": "Other Policies",
+        "description": "Create a custom category for this EndPlan that you can rename."
+      },
+      "categories": {
+        "limitReached": "You can select up to {{max}} policy categories on your plan."
+      },
+      "planLimits": {
+        "rowLimitReached": "Policy row limit reached for your plan (max {{max}} per category)."
+      },
+      "cellPlaceholder": "Enter {{label}}",
+      "cellPlaceholderFallback": "value",
+      "cellSelectPlaceholder": "Select {{label}}",
+      "toast": {
+        "assetAdded": "Policy added."
+      },
+      "hydration": {
+        "loadFailed": "We couldn't load your saved policy rows. Your data has not been changed on the server. Try again, or contact support if this continues.",
+        "notReady": "Your EndPlan is still preparing. Please wait a moment and try again.",
+        "retry": "Try again"
+      },
+      "addTableColumn": "Add column",
+      "removeCategoryDialog": {
+        "title": "Remove policy category",
+        "subtitle": "This removes the table from your EndPlan",
+        "subtitleCustom": "This permanently deletes this custom category",
+        "description": "Are you sure you want to remove \"{{name}}\" from your EndPlan? Existing records in this category will no longer be shown here.",
+        "descriptionCustom": "Are you sure you want to permanently delete \"{{name}}\"? It will be removed from your EndPlan and will no longer appear when adding categories.",
+        "confirm": "Remove category",
+        "confirmDelete": "Delete category",
+        "deletedToast": "Custom category deleted",
+        "deleteError": "Failed to delete custom category"
+      },
+      "deleteColumnDialog": {
+        "title": "Delete column",
+        "subtitle": "This removes the column from this policy category",
+        "description": "Delete \"{{column}}\" from {{category}}? Values in this column for all rows will be removed.",
+        "confirm": "Delete column"
+      },
+      "customColumn": {
+        "newColumnDefaultName": "New Column",
+        "passwordDefaultName": "Password",
+        "valueDefaultName": "Value"
+      },
+      "fieldTypes": {
+        "text": "Text",
+        "textarea": "Long text",
+        "number": "Number",
+        "value": "Value (money)",
+        "date": "Date",
+        "select": "Select",
+        "password": "Password",
+        "contact": "Contact"
+      },
+      "contacts": {
+        "fieldTypeLabel": "Contact",
+        "attachAction": "Attach contact",
+        "unavailableLabel": "Contact unavailable",
+        "removeAction": "Remove contact",
+        "searchPlaceholder": "Search contacts…",
+        "searchNoResults": "No contacts match your search.",
+        "emptyList": "No contacts yet. Add contacts in the Contacts section first.",
+        "noSubtitle": "No role",
+        "linkedSuccess": "Contact linked",
+        "pickerTitle": "Attach contact"
+      },
+      "passwordField": {
+        "maskedDisplay": "••••••••",
+        "showPasswordAria": "Show password",
+        "hidePasswordAria": "Hide password"
+      },
+      "duplicateColumnDialog": {
+        "title": "Column name already in use",
+        "subtitle": "This category already has a column with this label",
+        "description": "A column named \"{{column}}\" already exists in {{category}}. You can still add another column with the same name, but it may be confusing. Continue?",
+        "confirm": "Add column anyway"
+      },
+      "deleteRowDialog": {
+        "title": "Delete policy row",
+        "subtitle": "This removes the row from this category",
+        "rowLabel": "Row {{number}}",
+        "description": "Remove {{row}} from {{category}}? All values in this row will be deleted. This cannot be undone.",
+        "confirm": "Delete row",
+        "deleteRowButtonAriaLabel": "Delete row",
+        "rowActionsColumnAriaLabel": "Row actions"
+      },
+      "attachments": {
+        "fieldTypeLabel": "Document",
+        "emptyLabel": "No document attached",
+        "unavailableLabel": "Document unavailable",
+        "encryptedFallbackName": "Encrypted document",
+        "downloadNameFallback": "document",
+        "closeDrawerAriaLabel": "Close document drawer",
+        "drawerEmptyDescription": "Attach a document to this policy field.",
+        "drawerPreviewLabel": "{{type}} attached to this policy field.",
+        "attachAction": "Attach document",
+        "attachFileAction": "Attach File",
+        "replaceAction": "Replace document",
+        "uploadFromDeviceTab": "Upload from device",
+        "linkFromDocumentsTab": "Link from Documents",
+        "uploadPrompt": "Choose a file or drag and drop it here.",
+        "uploadHint": "JPEG, PNG, PDF, and MP4 formats.",
+        "uploadHintWithLimit": "JPEG, PNG, PDF, and MP4 formats, up to {{size}}.",
+        "browseFilesAction": "Browse files",
+        "searchDocumentsPlaceholder": "Search documents..",
+        "searchNoResults": "No documents match your search.",
+        "folderFileCount_one": "{{count}} file",
+        "folderFileCount_other": "{{count}} files",
+        "folderHasNoFiles": "No files in this folder.",
+        "linkDocumentAction": "Link Document",
+        "downloadAction": "Download",
+        "deleteAction": "Delete",
+        "fileTypeLabel": "File type",
+        "sizeLabel": "Size",
+        "uploadedLabel": "Uploaded",
+        "documentTypeDefaultLabel": "Document",
+        "documentTypeFormat": "{{type}} document",
+        "vaultMissingError": "EndPlan not found",
+        "keysUnavailableError": "Encryption keys not available",
+        "encryptedFallbackFolderName": "Encrypted folder",
+        "downloadNotReadyError": "Document is not ready for download",
+        "downloadFailedError": "Failed to download document",
+        "offlineUploadError": "You must be online to attach documents",
+        "unsupportedTypeError": "Unsupported file type",
+        "maxSizeExceededError": "This file exceeds your plan limit of {{size}}.",
+        "uploadedSuccess": "Document attached",
+        "linkedSuccess": "Document linked",
+        "uploadFailedError": "Failed to attach document",
+        "uploadToFolderAction": "Upload a file",
+        "newFolderAction": "New folder",
+        "createFolderInRootDescription": "Create a new encrypted folder at the top level of your documents library.",
+        "createFolderInParentDescription": "Create a new encrypted folder inside \"{{name}}\".",
+        "documentsOwnerOnlyHint": "Only the EndPlan owner can upload files or create folders from here. You can still link existing documents.",
+        "documentsOwnerOnlyError": "Only the EndPlan owner can modify documents.",
+        "folderNameRequiredError": "Folder name is required",
+        "folderCreatedSuccess": "Folder created",
+        "createFolderFailedError": "Failed to create folder",
+        "vaultDocumentUploadedSuccess": "Document added to your library",
+        "vaultDocumentUploadFailedError": "Failed to upload document"
+      },
+      "readOnlyEmptyState": "No policy categories are selected yet.",
+      "readOnlyEmptyCategory": "No items in this category yet.",
+      "readOnlyRowCount_one": "{{count}} row",
+      "readOnlyRowCount_other": "{{count}} rows"
+    },
+    "documents": {
+      "secureTitle": "Important Documents",
+      "secureDescription": "Record where key documents are and reference numbers.",
+      "whatToAdd": "What to add:",
+      "whatToAddExamples": "ID, passport, birth/marriage certificates, academic records, warranties.",
+      "addDocument": "Add a document",
+      "documentType": "Document type",
+      "documentTypePlaceholder": "Select type",
+      "documentName": "Document name",
+      "documentNamePlaceholder": "e.g., Passport, Marriage certificate",
+      "location": "Location / where stored",
+      "locationPlaceholder": "Safe, lawyer, bank box, etc.",
+      "referenceNumber": "Reference number",
+      "referencePlaceholder": "Document or case number",
+      "issueDate": "Issue date",
+      "issueDatePlaceholder": "If relevant",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "Extra details",
+      "addDocumentButton": "Add document",
+      "editDocument": "Edit Document",
+      "updateDocumentButton": "Update Document",
+      "skip": "Skip",
+      "addFirst": "Add your first document",
+      "addFirstDescription": "Record IDs, certificates, and important papers.",
+      "noItems": "No documents yet"
+    },
+    "documentsManager": {
+      "foldersTitle": "Folders",
+      "ownerHint": "Create folders, upload encrypted files, and manage document names from one workspace.",
+      "readOnlyHint": "Browse the folders you can access and download encrypted files when you need them.",
+      "allDocumentsLabel": "All Documents",
+      "suggestedLabel": "Suggested",
+      "suggestions": {
+        "title": "Documents to consider",
+        "subtitle": "Common files your trusted circle may need during an emergency or transfer process.",
+        "dismiss": "Dismiss document suggestions",
+        "toConsider": "To consider",
+        "done": "Done",
+        "markDone": "Mark {{name}} as done",
+        "items": {
+          "will_or_trust": "Will or Trust",
+          "power_of_attorney": "Power of Attorney",
+          "insurance_policy": "Insurance Policy",
+          "property_deed": "Property Deed or Title",
+          "account_statement": "Account Statement",
+          "tax_return": "Tax Return"
+        }
+      },
+      "rootLabel": "Root",
+      "rootDocumentsTitle": "Root documents",
+      "entryCount_one": "{{count}} item",
+      "entryCount_other": "{{count}} items",
+      "subfolderCount_one": "{{count}} subfolder",
+      "subfolderCount_other": "{{count}} subfolders",
+      "fileCount_one": "{{count}} file",
+      "fileCount_other": "{{count}} files",
+      "ownerOnlyLabel": "Owner access",
+      "readOnlyLabel": "Read only",
+      "rootDescription": "Everything stored at the top level of your Documents area in EndPlan.",
+      "selectedFolderDescription": "Documents and subfolders stored inside {{name}}.",
+      "folderActions": "Folder actions",
+      "expandFolder": "Expand folder",
+      "collapseFolder": "Collapse folder",
+      "documentActions": "Document actions",
+      "openFolder": "Open folder",
+      "newFolder": "New folder",
+      "newSubfolder": "New subfolder",
+      "refresh": "Refresh",
+      "chooseFiles": "Choose files",
+      "uploading": "Uploading...",
+      "uploadProgressTitleActive": "Uploading",
+      "uploadProgressTitleDone": "Done",
+      "uploadProgressSubtitleActive": "{{completed}} of {{total}} files",
+      "uploadProgressSubtitleDone": "{{total}} of {{total}} transfers completed",
+      "uploadProgressCloseAria": "Dismiss upload status",
+      "uploadDocumentsFailedError": "Failed to upload documents",
+      "uploadTitle": "Upload encrypted documents to {{folder}}",
+      "uploadDescription": "Drag files here or use the button below to add them to this location. Accepted files: {{types}}. Maximum {{size}} per file.",
+      "uploadSecurityHint": "Files are encrypted in your browser before upload.",
+      "readOnlyDownloadTitle": "Documents are available for secure download",
+      "readOnlyDownloadDescription": "This shared EndPlan view is read only. You can browse folders and download decrypted copies locally.",
+      "sharedDownloadBadge": "Download access only",
+      "subfoldersTitle": "Subfolders",
+      "emptyWorkspaceTitle": "No documents yet",
+      "emptyWorkspaceDescription": "Upload your important files and folders to keep them secure and accessible to your trusted circle. Accepted files: {{types}}. Maximum {{size}} per file.",
+      "emptyWorkspaceDragHint": "You can also drag and drop files directly here.",
+      "emptyWorkspaceDragHintBeforeFolder": "You can also drag and drop files directly here.",
+      "selectFolderTitle": "My files",
+      "selectFolderDescription": "Upload documents here, or open a folder to organize them.",
+      "legacyRootFilesTitle": "Files in My files",
+      "legacyRootFilesDescription": "These documents are stored at the root of your vault. You can keep them here or move them into a folder.",
+      "noFilesYetTitle": "This folder has subfolders, but no files yet",
+      "noFilesYetDescription": "Upload files here, or open a folder to browse its contents. Accepted files: {{types}}. Maximum {{size}} per file.",
+      "emptyFolderTitle": "This folder is empty",
+      "emptyFolderDescription": "There are no files in this folder yet.",
+      "uploadDropTitle": "Choose a file or drag and drop it here.",
+      "folderOnlyUploadDescription": "Upload documents into this selected folder. Accepted files: {{types}}. Maximum {{size}} per file.",
+      "noFolders": "No folders yet",
+      "driveSearchPlaceholder": "Search documents…",
+      "driveSortModified": "Modified",
+      "driveSortCreated": "Created",
+      "driveViewGrid": "Grid view",
+      "driveViewList": "List view",
+      "driveNoSearchResults": "No items match your search.",
+      "driveRootBreadcrumbLabel": "My files",
+      "driveCreateNewFolder": "Create new folder",
+      "driveUpload": "Upload",
+      "driveUploadFiles": "Upload files",
+      "driveUploadFolder": "Upload folder",
+      "driveFilesHeading": "Documents",
+      "tableName": "Name",
+      "tableType": "Type",
+      "tableSize": "Size",
+      "tableUpdated": "Modified",
+      "tableCreated": "Created",
+      "tableSecurity": "Security",
+      "tableActions": "Actions",
+      "securityEncrypted": "Encrypted",
+      "documentTypeFallback": "Document",
+      "folderNameLabel": "Folder name",
+      "folderNamePlaceholder": "e.g. Legal, IDs, Certificates",
+      "documentNameLabel": "Document name",
+      "documentNamePlaceholder": "Enter a document name",
+      "createFolderTitle": "Create folder",
+      "createSubfolderTitle": "Create subfolder",
+      "createFolderDescription": "Add a new encrypted folder at the current level.",
+      "createSubfolderDescription": "Add a new encrypted folder inside {{name}}.",
+      "renameFolderTitle": "Rename folder",
+      "renameFolderDescription": "Choose a new display name for {{name}}.",
+      "renameDocumentTitle": "Rename document",
+      "renameDocumentDescription": "Choose a new display name for {{name}}.",
+      "createFolderAction": "Create folder",
+      "saveNameAction": "Save name",
+      "renameFolder": "Rename folder",
+      "renameDocument": "Rename document",
+      "selectFolderBeforeUploadError": "Select a folder before uploading documents.",
+      "planLimitsLoadingError": "Your plan information is still loading. Wait a moment and try again.",
+      "planLimitSummary": "{{fileCount}} / {{fileMax}} documents · {{folderCount}} / {{folderMax}} folders · {{storageUsed}} / {{storageMax}} storage",
+      "folderLimitReachedError": "You've reached the maximum of {{max}} folders for your current plan. Remove a folder or upgrade to add more.",
+      "fileLimitReachedError": "Your plan allows up to {{max}} documents. You have {{current}} and cannot add {{adding}} more. Remove documents or upgrade your plan.",
+      "fileExceedsPlanLimit": "{{name}} exceeds your plan's per-file limit of {{size}}.",
+      "documentNameRequiredError": "Document name is required.",
+      "documentRenamedSuccess": "Document renamed",
+      "renameDocumentFailedError": "Failed to rename document",
+      "deleteFolderTitle": "Delete folder?",
+      "deleteFolderDescription": "{{name}} and all nested documents will be permanently removed.",
+      "deleteFolderWithFilesTitle": "Delete folder with files?",
+      "deleteFolderWithFilesDescription": "{{name}} contains {{count}} files. What would you like to do with them before deleting the folder?",
+      "moveFilesThenDeleteAction": "Move files to another folder, then delete",
+      "moveFilesThenDeleteDescription": "The files will be moved first, then this folder and its subfolders will be deleted.",
+      "noMoveDestinationDescription": "Create another folder first if you want to move these files instead of deleting them.",
+      "deleteFolderAndFilesAction_one": "Permanently delete folder and 1 file",
+      "deleteFolderAndFilesAction_other": "Permanently delete folder and all {{count}} files",
+      "moveFilesDialogTitle": "Move files before deleting",
+      "moveFilesDialogDescription": "Choose the folder that should receive the {{count}} files from {{name}} before deletion.",
+      "moveDestinationFolderLabel": "Destination folder",
+      "moveFilesAction": "Move files and delete folder",
+      "dialogStandardSubtitle": "Confirm the details before continuing",
+      "dialogDangerSubtitle": "Irreversible action",
+      "typeDeleteToConfirm": "Type \"DELETE\" to confirm",
+      "typeDeletePlaceholder": "Type DELETE",
+      "selectMoveDestinationError": "Select a destination folder before moving files.",
+      "movedFilesSuccess_one": "1 file moved",
+      "movedFilesSuccess_other": "{{count}} files moved",
+      "moveFilesFailedError": "Failed to move files",
+      "deleteDocumentTitle": "Delete document?",
+      "deleteDocumentDescription": "{{name}} will be permanently removed from this EndPlan folder.",
+      "deleteFolder": "Delete folder",
+      "deleteDocument": "Delete document",
+      "download": "Download",
+      "viewBlockedByBrowser": "Allow pop-ups for this site to view the document in a new tab.",
+      "viewFileNotReadyError": "File is not ready to view.",
+      "viewOpenFailedError": "Failed to open document.",
+      "viewerCloseAria": "Close document viewer",
+      "viewerLoading": "Decrypting and preparing preview…",
+      "viewerDownloadOnlyTitle": "Preview not available",
+      "viewerDownloadOnlyDescription": "This file type cannot be previewed in the app yet. Download a decrypted copy to open it on your device.",
+      "viewerErrorTitle": "Could not display document",
+      "selectionToolbarRegion": "Selected documents",
+      "selectionToolbarCount_one": "{{count}} document selected",
+      "selectionToolbarCount_other": "{{count}} documents selected",
+      "selectionToolbarClear": "Clear",
+      "selectionToolbarView": "View",
+      "selectionToolbarViewSingleHint": "Select a single document to view it.",
+      "selectionToolbarDelete": "Delete",
+      "selectionSelectAllLabel": "Select all in this list",
+      "driveToolbarSelectedShort_one": "{{count}} selected",
+      "driveToolbarSelectedShort_other": "{{count}} selected",
+      "selectionRowCheckbox": "Select {{name}}",
+      "deleteDocumentsBulkTitle_one": "Delete 1 document?",
+      "deleteDocumentsBulkTitle_other": "Delete {{count}} documents?",
+      "deleteDocumentsBulkDescription": "You are about to permanently remove {{count}} document(s): {{preview}}. This cannot be undone.",
+      "deleteDocumentsBulkConfirm": "Delete all",
+      "deleteDriveSelectionTitle_one": "Delete 1 item?",
+      "deleteDriveSelectionTitle_other": "Delete {{count}} items?",
+      "deleteDriveSelectionDescription": "You are about to permanently remove {{count}} item(s): {{preview}}. This cannot be undone.",
+      "deleteDriveSelectionBlockedFolders": "Folders that still contain documents ({{names}}) are not included and will remain.",
+      "deleteDriveSelectionConfirm": "Delete selected"
+    },
+    "journal": {
+      "secureTitle": "Journal",
+      "secureDescription": "Reflections, lessons, and thoughts you want to keep or pass on.",
+      "whatToAdd": "What to add:",
+      "whatToAddExamples": "Daily reflections, memories, life lessons, advice.",
+      "addEntry": "Add an entry",
+      "entryTitle": "Title",
+      "entryTitlePlaceholder": "Short title for the entry",
+      "date": "Date",
+      "datePlaceholder": "When it was written",
+      "content": "Content",
+      "contentPlaceholder": "Write your reflection or thoughts...",
+      "tags": "Tags / category",
+      "tagsPlaceholder": "e.g., Reflection, Advice, Memory",
+      "addEntryButton": "Add entry",
+      "editEntry": "Edit Entry",
+      "updateEntryButton": "Update Entry",
+      "skip": "Skip",
+      "addFirst": "Add your first journal entry",
+      "addFirstDescription": "Capture reflections and lessons for the future.",
+      "noItems": "No entries yet"
+    },
+    "memoir": {
+      "secureTitle": "Your Legacy",
+      "secureDescription": "Your life story, values, and messages for the people you love.",
+      "whatToAdd": "What to add:",
+      "whatToAddExamples": "Childhood, important events, people who mattered, values, messages for loved ones.",
+      "addChapter": "Add a chapter",
+      "chapterTitle": "Chapter / section title",
+      "chapterTitlePlaceholder": "e.g., Growing up, My parents, Advice for my kids",
+      "timePeriod": "Time period or theme",
+      "timePeriodPlaceholder": "e.g., Childhood, Career, Family",
+      "content": "Content",
+      "contentPlaceholder": "Write your story...",
+      "dedicatedTo": "Dedicated to",
+      "dedicatedToPlaceholder": "e.g., For my daughter",
+      "addChapterButton": "Add chapter",
+      "editChapter": "Edit Chapter",
+      "updateChapterButton": "Update Chapter",
+      "skip": "Skip",
+      "addFirst": "Add your first chapter",
+      "addFirstDescription": "Tell your life story and leave messages for loved ones.",
+      "noItems": "No chapters yet"
+    },
+    "instructions": {
+      "formatLabel": "Format",
+      "backToChooseType": "Back to format choice",
+      "breadcrumbChooseType": "New instruction",
+      "previewModeLabel": "Preview mode",
+      "previewAttachmentsHeading": "Attachments",
+      "previewTypeBadgeSteps_one": "Step-by-step · {{count}} step",
+      "previewTypeBadgeSteps_other": "Step-by-step · {{count}} steps",
+      "previewEmptyNote": "No note text yet.",
+      "previewEmptyStep": "No description for this step.",
+      "breadcrumbCreate": "Compose",
+      "editorUntitled": "Untitled instruction",
+      "subtitle": "Leave practical guides for your key person.",
+      "planLimitCount": "{{current}} / {{max}} instructions",
+      "backToList": "Back to instructions",
+      "related": "Related",
+      "deleteDialog": {
+        "title": "Delete this instruction?",
+        "description": "This permanently removes “{{title}}” from your EndPlan. You cannot undo this."
+      },
+      "delete": "Delete instruction",
+      "viewAsset": "View Asset",
+      "viewContact": "View Contact",
+      "viewDocument": "View Document",
+      "createCta": "Add instruction",
+      "newInstructionCta": "New instruction",
+      "chooseTypeTitle": "Create a new instruction",
+      "chooseTypeSubtitle": "Choose the format that works best for what you want to share",
+      "writtenCardBody": "Write a note or message. Free-form text, like a letter or personal guidance.",
+      "stepCardBody": "Create a step-by-step guide. Numbered steps to follow in order.",
+      "exampleUsesLabel": "Example uses",
+      "writtenExample1": "What I want for the house",
+      "writtenExample2": "A message to my children",
+      "writtenExample3": "Wishes for my funeral",
+      "stepExample1": "How to access my accounts",
+      "stepExample2": "Closing down the business",
+      "stepExample3": "Managing my investments",
+      "listNoPreview": "No preview text yet.",
+      "yourInstructions": "Your instructions",
+      "cardMenuLabel": "Instruction options",
+      "cardEdit": "Edit",
+      "cardDelete": "Delete",
+      "cardReadyLabel": "Ready",
+      "relative": {
+        "justNow": "Just now",
+        "minutesAgo_one": "{{count}} minute ago",
+        "minutesAgo_other": "{{count}} minutes ago",
+        "hoursAgo_one": "{{count}} hour ago",
+        "hoursAgo_other": "{{count}} hours ago",
+        "daysAgo_one": "{{count}} day ago",
+        "daysAgo_other": "{{count}} days ago"
+      },
+      "attachmentsCount_one": "{{count}} attachment",
+      "attachmentsCount_other": "{{count}} attachments",
+      "editCta": "Edit Instruction",
+      "saveCta": "Save instruction",
+      "saveChangesCta": "Save Changes",
+      "firstCta": "Write your first instruction",
+      "addTitle": "Add instruction",
+      "addModalSubtitle": "Leave a guide for your Key Person. Link it to an asset or attach a document if needed.",
+      "editTitle": "Edit instruction",
+      "emptyTitle": "No instructions yet",
+      "emptyBody": "Write guides your Key Person can follow when the time comes. “How to access your laptop”. “Who to call first”. Where things are kept. Each instruction stands on its own. No documents or assets needed.",
+      "emptyStateIdeas": {
+        "sectionTitle": "Common things people write instructions for",
+        "devicesTitle": "Devices and accounts",
+        "devicesBody": "Laptop passwords, email access, streaming and banking logins.",
+        "propertyTitle": "Property and assets",
+        "propertyBody": "How to claim land, transfer a vehicle, or access a safe.",
+        "financialTitle": "Financial accounts",
+        "financialBody": "Banks, investments, and outstanding debts to settle."
+      },
+      "templates": {
+        "title": "Start from a template",
+        "subtitle": "Common instructions, pre-structured. Tap to add yours.",
+        "dismiss": "Dismiss instruction templates",
+        "useTemplate": "Use template",
+        "items": {
+          "funeral_wishes": {
+            "title": "Funeral Wishes",
+            "description": "Service, burial or cremation preferences, and people to notify.",
+            "draftTitle": "Funeral wishes",
+            "draftBody": "I would like my funeral and memorial arrangements to follow these preferences:\n\n- Ceremony style: [religious / non-religious / private / public]\n- Location preference: [place of worship / funeral home / other]\n- Burial or cremation: [preference]\n- People to notify first: [names]\n- Music, readings, or other details: [notes]\n\nPlease also consider: [any additional wishes]."
+          },
+          "executor": {
+            "title": "Instructions for My Executor",
+            "description": "Practical guidance for the person settling your affairs.",
+            "draftTitle": "Instructions for my executor",
+            "draftBody": "Dear Executor,\n\nWhen the time comes, please start with these steps:\n\n1. Locate my will and important documents in: [location / folder]\n2. Contact my lawyer: [name and phone]\n3. Notify close family: [names]\n4. Secure access to accounts and property: [notes]\n5. Review outstanding bills and benefits: [notes]\n\nPriority contacts:\n- [Name] — [role] — [phone/email]\n\nAdditional guidance: [notes]."
+          },
+          "power_of_attorney": {
+            "title": "Instructions for My Power of Attorney",
+            "description": "What to do if someone needs to act on your behalf.",
+            "draftTitle": "Instructions for my power of attorney",
+            "draftBody": "Dear Power of Attorney,\n\nIf you need to act on my behalf, please follow this guidance:\n\n- Scope of authority: [financial / medical / both]\n- Preferred decision approach: [notes]\n- Accounts or institutions to contact first: [list]\n- People to consult before major decisions: [names]\n- Limits or preferences I want respected: [notes]\n\nDocuments you may need are stored in: [location].\n\nAdditional notes: [notes]."
+          },
+          "incapacitation": {
+            "title": "In the Event of My Incapacitation",
+            "description": "Care wishes and responsibilities if you cannot decide for yourself.",
+            "draftTitle": "If I become incapacitated",
+            "draftBody": "If I become unable to manage my own affairs, please follow these instructions:\n\n1. Contact my primary doctor: [name and phone]\n2. Notify my power of attorney / key person: [name and phone]\n3. Access medical and insurance information in: [location]\n4. Care preferences: [notes]\n5. Temporary household / financial priorities: [notes]\n\nEmergency contacts:\n- [Name] — [relationship] — [phone]\n\nAdditional guidance: [notes]."
+          },
+          "pay_and_cancel": {
+            "title": "What to Pay and What to Cancel",
+            "description": "Bills to keep paying and subscriptions or services to cancel.",
+            "draftTitle": "What to pay and what to cancel",
+            "draftBody": "Please use this list to manage ongoing payments and cancellations:\n\nContinue paying:\n- [Bill / provider] — due [date] — account info in [location]\n- [Bill / provider] — due [date] — account info in [location]\n\nCancel or pause:\n- [Subscription / service] — how to cancel: [notes]\n- [Subscription / service] — how to cancel: [notes]\n\nWhere to find statements and login details: [location].\n\nAdditional notes: [notes]."
+          },
+          "crypto_access": {
+            "title": "How to Access My Crypto",
+            "description": "Where to find wallets, exchanges, and how to begin recovery.",
+            "draftTitle": "How to access my crypto",
+            "draftBody": "Use this guidance to locate and secure my crypto assets. Do not share recovery phrases over email or chat.\n\n- Exchanges I use: [names]\n- Hardware / software wallets: [names]\n- Where recovery materials are stored: [secure location]\n- First person to involve: [name]\n- Important warnings: [notes]\n\nSteps:\n1. [First step]\n2. [Second step]\n3. [Third step]\n\nAdditional notes: [notes]."
+          }
+        }
+      },
+      "previewPlaceholder": "Select an instruction to preview.",
+      "linkedAssets": "Linked assets",
+      "attachedDocument": "Attached document",
+      "attachDocument": "Attach document",
+      "attachAsset": "Attach asset",
+      "attachContact": "Attach contact",
+      "none": "None",
+      "missingAsset": "Unavailable asset",
+      "missingContact": "Unavailable contact",
+      "missingDocument": "Unavailable document",
+      "noAssets": "No assets available yet.",
+      "noContacts": "No contacts available yet.",
+      "noSubtitle": "Asset",
+      "noContactSubtitle": "Contact",
+      "searchContactsPlaceholder": "Search contacts…",
+      "form": {
+        "title": "Title",
+        "titlePlaceholder": "Enter instruction title",
+        "titleRequired": "Enter a title for this instruction.",
+        "note": "Your note",
+        "notePlaceholder": "Enter your instruction here",
+        "noteRequired": "Enter your instruction note.",
+        "steps": "Steps",
+        "stepsRequired": "Add at least one step with a title or description.",
+        "stepTitle": "Step title",
+        "stepTitlePlaceholder": "Step title",
+        "stepDescription": "Step description",
+        "stepPlaceholder": "Describe this step in detail…",
+        "untitledStep": "Untitled step",
+        "addStep": "Add step"
+      },
+      "type": {
+        "written": "Written note",
+        "stepByStep": "Step by step",
+        "steps": "{{count}} steps",
+        "stepByStepHint": "Numbered steps to follow in order. Good for tasks and processes.",
+        "writtenHint": "Free text, like a letter or message. Good for wishes and guidance."
+      },
+      "toast": {
+        "encryptionKeysUnavailable": "Encryption keys not available",
+        "saveFailed": "Could not save instructions",
+        "limitReached": "Instruction limit reached for your plan (max {{max}}).",
+        "created": "Instruction created",
+        "updated": "Instruction updated",
+        "deleted": "Instruction deleted",
+        "deleteFailed": "Could not delete instruction",
+        "folderCreateFailed": "Could not create folder",
+        "unsupportedFileType": "Unsupported file type",
+        "documentUploadFailed": "Could not upload document",
+        "vaultUnavailable": "Vault is unavailable",
+        "documentNotReady": "Document is not ready for download",
+        "documentDownloadFailed": "Could not download document"
+      }
+    }
+  },
+  "settings": {
+    "navSectionLabel": "Settings",
+    "title": "Account Settings",
+    "profileInformation": "Profile Information",
+    "changePhoto": "Change photo",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "phoneNumber": "Phone number",
+    "phoneNumberPlaceholder": "+1 (555) 000-0000",
+    "country": "Country",
+    "countryPlaceholder": "Select or enter country",
+    "saveChanges": "Save changes",
+    "cancel": "Cancel",
+    "saveSuccess": "Profile updated successfully",
+    "saveError": "Failed to update profile",
+    "avatarUploadSuccess": "Profile photo updated",
+    "avatarUploadError": "Could not upload photo. Please try again.",
+    "avatarUploadTooLarge": "Photo must be 2 MB or smaller.",
+    "avatarUploadInvalidType": "Use JPEG, PNG, GIF, or WebP.",
+    "avatarUploadStorageUnavailable": "Photo upload is not available right now. Try again later or contact support.",
+    "profileLoadError": "Could not load profile. Please refresh or try again later.",
+    "export": {
+      "sectionTitle": "Export your EndPlan",
+      "sectionBody": "Download a decrypted copy of your assets, contacts, instructions, and documents as a folder named “My EndPlan”.",
+      "action": "Export EndPlan",
+      "actionRunning": "Exporting…",
+      "showProgress": "Show progress",
+      "noVault": "Create your EndPlan before exporting.",
+      "needsUnlock": "Unlock your EndPlan to export a copy.",
+      "zipFolderName": "My EndPlan",
+      "zipDownloadName": "My EndPlan.zip",
+      "untitledFolder": "Untitled folder",
+      "untitledFile": "Untitled file",
+      "untitledCategory": "Category",
+      "untitledInstruction": "Untitled instruction",
+      "untitledAsset": "Untitled asset",
+      "untitledContact": "Untitled contact",
+      "contactsNotesHeader": "Notes",
+      "instructionWrittenType": "Written note",
+      "instructionStepType": "Step-by-step",
+      "instructionRelatedHeading": "Related",
+      "instructionRelatedContact": "Contact",
+      "instructionRelatedDocument": "Document",
+      "instructionRelatedAssets": "Assets",
+      "files": {
+        "assetsFolder": "Assets",
+        "contacts": "Contacts.csv",
+        "instructions": "Instructions.txt",
+        "documentsFolder": "Documents",
+        "attachmentsFolder": "Asset attachments",
+        "notes": "Export notes.txt",
+        "overview": "EndPlan overview.pdf",
+        "policiesFolder": "Policies"
+      },
+      "notes": {
+        "title": "EndPlan export",
+        "generatedAt": "Generated at {{date}}",
+        "skippedNotReady": "{{count}} file(s) were skipped because they were still uploading.",
+        "skippedDocumentFailed": "Could not include document: {{name}}",
+        "skippedAttachmentFailed": "Could not include attachment: {{name}}",
+        "emptyInstructions": "No instructions saved.",
+        "overviewFailed": "Could not include the overview PDF."
+      },
+      "modal": {
+        "title": "Export your EndPlan",
+        "body": "This downloads a decrypted copy of your EndPlan to this device. Anyone with the file can read it, so keep it in a safe place.",
+        "includesTitle": "What’s included",
+        "itemOverview": "A briefing PDF to read first",
+        "itemAssets": "Assets as CSV",
+        "itemContacts": "Contacts as CSV",
+        "itemInstructions": "Instructions as a text file",
+        "itemDocuments": "Documents and asset attachments in their folders",
+        "keepTabOpen": "You can switch pages while it runs. Keep this tab open until the download starts.",
+        "confirm": "Export",
+        "itemPolicies": "Policies as CSV"
+      },
+      "progress": {
+        "titleActive": "Exporting your EndPlan",
+        "titleDone": "Export complete",
+        "titleError": "Export failed",
+        "titleCancelled": "Export cancelled",
+        "doneSubtitle": "Your download should have started.",
+        "errorSubtitle": "Could not export your EndPlan. Try again.",
+        "cancelledSubtitle": "Export cancelled.",
+        "cancelledLockedSubtitle": "Export stopped because your EndPlan was locked.",
+        "keepTabOpen": "You can switch pages. Keep this tab open.",
+        "preparing": "Preparing export…",
+        "overview": "Creating overview PDF…",
+        "assets": "Exporting assets…",
+        "contacts": "Exporting contacts…",
+        "instructions": "Exporting instructions…",
+        "documents": "Exporting documents…",
+        "documentsCounted": "Exporting documents ({{completed}} of {{total}})",
+        "attachments": "Exporting attachments…",
+        "attachmentsCounted": "Exporting attachments ({{completed}} of {{total}})",
+        "packaging": "Preparing download…",
+        "cancel": "Cancel export",
+        "closeAria": "Hide export progress",
+        "policies": "Exporting policies…"
+      },
+      "overview": {
+        "title": "EndPlan overview",
+        "preparedFor": "Prepared for {{name}}",
+        "generatedAt": "Generated {{date}}",
+        "purpose": "This is a briefing of the EndPlan as of the date above. Keep it as private as the rest of this folder.",
+        "howToUseTitle": "How to use this file",
+        "howToUseBody": "Read this PDF first. The full files are in Documents and Asset attachments. Detailed tables are in Assets and Contacts.csv. Password fields and account numbers are not included here.",
+        "countsLine": "{{contacts}} contacts · {{instructions}} instructions · {{assets}} assets · {{documents}} documents",
+        "startHereTitle": "Start here",
+        "startHereEmpty": "No priority contacts yet. See People below.",
+        "peopleTitle": "People",
+        "peopleEmpty": "No contacts saved.",
+        "instructionsTitle": "Instructions",
+        "instructionsEmpty": "No instructions saved.",
+        "assetsTitle": "Assets",
+        "assetsEmpty": "No assets saved.",
+        "assetsHint": "Full details, including account numbers, are in the Assets folder.",
+        "documentsTitle": "Documents",
+        "documentsEmpty": "No documents saved.",
+        "documentsHint": "The files themselves are in the Documents folder.",
+        "footer": "EndPlan overview · keep confidential",
+        "institutionLabel": "Institution"
+      }
+    },
+    "erasure": {
+      "title": "Data & privacy",
+      "intro": "Export a copy of your EndPlan, manage your recovery key, and delete data or your account.",
+      "trialBanner": "You are currently on the Trial plan.",
+      "paidGate": {
+        "title": "Delete your account",
+        "intro": "You have an active subscription. Before continuing, here's what happens to your billing.",
+        "tierBasic": "Basic Plan",
+        "tierPro": "Pro Plan",
+        "intervalMonth": "Billed monthly",
+        "intervalYear": "Billed annually",
+        "billingPeriodPrefix": "Your current billing period runs until",
+        "billingPeriodSuffix": ". Deleting your account cancels your subscription immediately. You won't be charged again, but the remaining period is non-refundable.",
+        "checkboxLabel": "I understand my subscription will be cancelled immediately and I won't receive a refund for the remaining period.",
+        "keepAccount": "Keep my account",
+        "continue": "Continue"
+      },
+      "scheduledDeletion": {
+        "toastRestored": "Account deletion cancelled. Your account stays active.",
+        "welcome": {
+          "title": "Your account is scheduled for deletion",
+          "subtitle_one": "You have {{count}} day remaining to cancel this request.",
+          "subtitle_other": "You have {{count}} days remaining to cancel this request.",
+          "greeting": "Welcome back, {{name}}.",
+          "body": "Your account and all your data are still here. If you changed your mind, you can restore your account now.",
+          "restoreTitle": "What gets restored",
+          "item1": "Your profile and account access",
+          "item2": "All EndPlan content (documents and assets)",
+          "item3": "Trusted Circle",
+          "item4": "Transfer Process configuration",
+          "dismiss": "Cancel",
+          "restore": "Restore my account"
+        },
+        "restored": {
+          "title": "Your account is restored",
+          "boxTitle": "What's been restored",
+          "body": "Your EndPlan, Trusted Circle, Transfer Process, and all documents are intact. Your Key Persons have been notified that your plan is available again.",
+          "goToDashboard": "Go to dashboard"
+        }
+      },
+      "requestsTitle": "Scheduled deletions",
+      "emptyRequests": "No scheduled deletions.",
+      "loadError": "Could not load deletion requests.",
+      "retry": "Try again",
+      "rowStatus": "Status: {{status}}",
+      "rowScheduledFor": "Earliest run: {{date}}",
+      "cancelScheduled": "Cancel schedule",
+      "sectionDataTitle": "Delete EndPlan data",
+      "sectionDataBody": "Remove all uploaded content from your EndPlan. Your account stays active.",
+      "sectionDataAction": "Delete data",
+      "recovery": {
+        "title": "Recovery key",
+        "body": "A 12-word recovery key lets you restore access to your encrypted EndPlan if you forget your password.",
+        "statusConfigured": "Recovery key configured",
+        "statusConfiguredWithDate": "Recovery key configured · Set up {{date}}",
+        "statusMissing": "No recovery key configured yet.",
+        "actionGenerate": "Generate recovery key",
+        "actionRegenerate": "Regenerate key",
+        "actionViewAndSave": "View key",
+        "actionViewPhrase": "View key",
+        "viewModal": {
+          "title": "Your recovery phrase",
+          "description": "Anyone with this phrase can restore access to your encrypted EndPlan. Only view it in a private place.",
+          "loading": "Decrypting your recovery phrase…",
+          "loadErrorNoVault": "Could not load your EndPlan. Try again later.",
+          "loadErrorNoSection": "No encrypted backup was found in your EndPlan. Use “Regenerate recovery phrase” to create a new phrase and store it.",
+          "loadErrorNoKeys": "Your encryption keys are not available in this browser session. Refresh the page or sign in again, then try again.",
+          "loadErrorDecrypt": "Could not read your recovery backup. Try again, or regenerate your recovery phrase."
+        },
+        "modal": {
+          "title": "Set up recovery phrase",
+          "description": "Enter your current password. We will generate a new 12-word phrase and encrypt your keys with it.",
+          "passwordLabel": "Current password",
+          "passwordPlaceholder": "Enter your current password",
+          "generate": "Generate recovery phrase",
+          "regenerate": "Regenerate recovery phrase",
+          "generatedDescription": "Your 12-word phrase is shown once. Save it in a secure place.",
+          "generatedLabel": "Recovery phrase",
+          "generatedWarning": "If you lose both your password and this phrase, your encrypted EndPlan cannot be restored.",
+          "copy": "Copy all words"
+        },
+        "toast": {
+          "saved": "Recovery key saved.",
+          "error": "Could not configure recovery key.",
+          "vaultBackupFailed": "Recovery was updated on your account, but an encrypted backup could not be saved to your EndPlan. Save the phrase somewhere safe. If this keeps happening, sign out and sign back in, then try again.",
+          "copied": "Recovery key copied.",
+          "copyError": "Could not copy recovery key."
+        }
+      },
+      "sectionAccountTitle": "Delete account",
+      "sectionAccountBody": "Permanently remove your account and everything in it. Your Key Persons will be notified. You have 30 days to reverse this.",
+      "sectionAccountAction": "Delete account",
+      "alreadyScheduledData": "A data deletion is already scheduled or in progress.",
+      "alreadyScheduledAccount": "An account deletion is already scheduled or in progress.",
+      "status": {
+        "scheduled": "Scheduled",
+        "processing": "Processing",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "failed": "Failed",
+        "unknown": "Unknown"
+      },
+      "kind": {
+        "endplanData": "EndPlan data",
+        "fullAccount": "Account"
+      },
+      "modal": {
+        "intro": {
+          "titleData": "Delete your EndPlan data",
+          "descriptionData": "This removes all content from your EndPlan. Your account and settings will remain.",
+          "whatTitleData": "What will be deleted",
+          "item1Data": "All documents and files",
+          "item2Data": "All assets",
+          "item3Data": "All other saved EndPlan content",
+          "item4Data": "EndPlan encryption keys tied to this content",
+          "continue": "Continue"
+        },
+        "step2": {
+          "title": "Are you sure?",
+          "warning": "This cannot be undone.",
+          "confirmLabel": "Type \"{{phrase}}\" to confirm *",
+          "confirmPlaceholder": "Type DELETE here …",
+          "submitData": "Delete EndPlan data"
+        }
+      },
+      "accountModal": {
+        "step1": {
+          "title": "Delete your account",
+          "subtitle": "This permanently closes your EndPlan account and removes all associated data.",
+          "loseTitle": "YOU WILL LOSE EVERYTHING",
+          "loseItem1": "Your profile and account credentials",
+          "loseItem2": "All documents and assets",
+          "loseItem3": "Trusted Circle",
+          "loseItem4": "Transfer Process configuration",
+          "keyPersonTitle": "Your Key Persons will be notified",
+          "keyPersonsNotifyGeneric": "Trusted Circle owners linked to your account will receive an email letting them know your plan may no longer be available.",
+          "keyPersonsNotifyOne": "{{name}} will receive an email letting them know your plan may no longer be available.",
+          "keyPersonsNotifySome_one": "{{first}} and {{count}} other will receive an email letting them know your plan may no longer be available.",
+          "keyPersonsNotifySome_other": "{{first}} and {{count}} others will receive an email letting them know your plan may no longer be available.",
+          "keepAccount": "Keep my account",
+          "continue": "Continue"
+        },
+        "step2": {
+          "title": "Confirm account deletion",
+          "intro": "Type your email address to confirm. This schedules your account for permanent deletion.",
+          "confirmLabel": "Type \"{{email}}\" to confirm *",
+          "emailPlaceholder": "Your email address",
+          "footerNote": "Your account will be scheduled for deletion. You can log in within 30 days to cancel this request. After that, all data is permanently removed.",
+          "submit": "Delete my account"
+        },
+        "step3": {
+          "title": "Account scheduled for deletion",
+          "deletionDate": "Deletion date: {{date}}",
+          "body": "Log in before this date to cancel the deletion and restore your account. A confirmation has been sent to {{email}}.",
+          "signOut": "Sign out"
+        }
+      },
+      "cancelModal": {
+        "title": "Cancel this scheduled deletion?",
+        "description": "The scheduled job will not run. You can schedule again later if you need to.",
+        "confirm": "Cancel schedule"
+      },
+      "toast": {
+        "scheduledData": "EndPlan data deletion scheduled. Check your email for details.",
+        "scheduledAccount": "Account deletion scheduled. Check your email for details.",
+        "scheduleError": "Could not schedule deletion.",
+        "cancelled": "Scheduled deletion cancelled.",
+        "cancelError": "Could not cancel the request."
+      }
+    },
+    "billing": {
+      "upgradeBanner": "Switch to annual billing and save up to {{percent}}%",
+      "upgradeBannerFallback": "View plans and billing options.",
+      "upgradeNow": "Upgrade Now",
+      "upgradeModal": {
+        "title": "Choose a plan to keep your EndPlan",
+        "keyPersonFreeTrialTitle": "Free Trial",
+        "keyPersonFreeTrialDescription": "Try everything free for 30 days. Choose a plan when your trial ends.",
+        "keyPersonFreeTrialPrice": "Free",
+        "keyPersonFreeTrialPeriod": "for 30 days",
+        "keyPersonFreeTrialFeature1": "View shared EndPlan",
+        "keyPersonFreeTrialFeature2": "Full access to all features",
+        "keyPersonFreeTrialFeature3": "End-to-end encryption",
+        "keyPersonFreeTrialFeature4": "Cancel anytime",
+        "keyPersonFreeTrialCta": "Start your 30 day trial"
+      },
+      "cancellationTitle": "Cancellation",
+      "cancellationDescription": "If you cancel, your plan stays active until the end of your billing period.",
+      "cancellationUnavailable": "Cancellation is available once you have an active paid subscription.",
+      "cancelModal": {
+        "title": "Cancel Subscription",
+        "description": "If you cancel your subscription, your plan stays active until the end of your billing period. After that, your loose your subscription priveleges.",
+        "subtitle": "Irreversible billing change",
+        "confirm": "Cancel subscription"
+      }
+    }
+  },
+  "liveness": {
+    "title": "Configure Transfer Process",
+    "stepLabel": "STEP 4 OF 4",
+    "livenessCheck": "Liveness Check",
+    "description": "Set how long we should wait without hearing from you before notifying your trusted circle.",
+    "howItWorks": "How it works",
+    "point1": "You log in regularly",
+    "point2": "Timer resets each time",
+    "point3": "If timer expires, we notify you",
+    "point4": "No response triggers delivery",
+    "setInactivityPeriod": "Set Inactivity Period",
+    "inactivityPeriodLabel": "INACTIVITY PERIOD",
+    "selectDuration": "Select duration.",
+    "hint": "Common: 30, 60, 90, 180 days, 1 year.",
+    "days": "{{count}} days",
+    "oneDay": "1 day",
+    "twoDays": "2 days",
+    "oneYear": "1 year",
+    "recommended": "recommended",
+    "reminderPolicyLabel": "Reminder policy",
+    "reminderPolicyHint": "We'll automatically send reminder emails during the final 7 days before your inactivity period ends.",
+    "reminderFrequencyLabel": "How often should we remind you to log in?",
+    "reminderFrequencyHint": "We'll email you to log in before your inactivity period ends. Only options shorter than your period are shown.",
+    "reminderFrequencyNever": "Never",
+    "reminder15Min": "Every 15 min",
+    "reminder30Min": "Every 30 min",
+    "reminder60Min": "Every 60 min",
+    "reminder1Day": "Every 1 day",
+    "reminder7Days": "Every 7 days",
+    "reminder14Days": "Every 14 days",
+    "reminder30Days": "Every 30 days",
+    "completeSetup": "Complete Setup",
+    "saving": "Saving...",
+    "saveSuccess": "Notice period updated successfully",
+    "saveError": "Failed to update notice period",
+    "selectRequired": "Please select a duration",
+    "transferPage": {
+      "kicker": "TRANSFER PROCESS",
+      "title": "Your safety window",
+      "description": "Every sign in resets your clock. Set how long you're comfortable going without logging in — after that, we'll send you reminders, then quietly alert your trusted circle if we still don't hear from you.",
+      "cardTitle": "How long is your window?",
+      "mostPopular": "Most popular",
+      "current": "Current",
+      "unitDay": "day",
+      "unitDays": "days",
+      "alertDeadline": "If you don't sign in by <bold>{{date}}</bold>, we'll begin your alert sequence.",
+      "step1Line1": "Every login",
+      "step1Line2": "resets the clock",
+      "step2Line1": "Last 7 days",
+      "step2Line2": "we reach out",
+      "step3Line1": "No reply? Your",
+      "step3Line2": "circle gets access",
+      "setWindow": "Set my window · {{period}}",
+      "setWindowPlaceholder": "Choose how long your window is",
+      "footerNote": "You can update your window at any time. Between now and then, just sign in — that's all it takes.",
+      "readOnly": {
+        "banner": "Your safety window is read-only until you renew your subscription.",
+        "cannotSave": "Subscribe to change your safety window."
+      },
+      "editModal": {
+        "title": "Edit process",
+        "subtitle": "Change how long EndPlan waits without a sign-in before your trusted circle can step in.",
+        "saveNotice": "Saving starts a new safety window from today. Your trusted circle will not be notified.",
+        "saveChanges": "Save changes"
+      },
+      "active": {
+        "intro": "Your transfer process is running quietly. Each sign-in confirms you are okay and starts a fresh window.",
+        "status": "Active — your EndPlan stays private while you sign in",
+        "edit": "Edit",
+        "windowLabel": "Window",
+        "signInByLabel": "Sign in by",
+        "footerNote": "There is no check-in button to remember. Signing in is enough.",
+        "step1": "<bold>Sign in</bold> to restart the window",
+        "step2": "<bold>Final 7 days</bold> we remind you",
+        "step3": "<bold>Still no sign-in</bold> your circle gets access"
+      }
+    }
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "switchTo": "Switch to {{mode}} mode"
+  },
+  "language": {
+    "select": "Select language",
+    "current": "Language"
+  },
+  "cookies": {
+    "message": "We use cookies to improve security and your experience.",
+    "accept": "Accept",
+    "ignore": "Ignore"
+  }
+}

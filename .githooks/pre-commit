@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+set -eu
+
+echo "Running EndPlan web client pre-commit checks..."
+
+if [ ! -d "node_modules" ]; then
+  echo "Dependencies are missing. Run: npm ci"
+  exit 1
+fi
+
+sh ./scripts/use-node-22.sh npm run lint
+sh ./scripts/use-node-22.sh npm test
+sh ./scripts/use-node-22.sh npm run build
+
+echo "EndPlan web client pre-commit checks passed."

@@ -1,0 +1,66 @@
+@layer components {
+  /* Heading categories */
+  .typo-heading-page { @apply text-2xl md:text-3xl font-bold tracking-tight; }
+  .typo-heading-page-static { @apply text-2xl font-bold tracking-tight; }
+  .typo-heading-section { @apply text-xl font-semibold tracking-tight; }
+  .typo-heading-card { @apply text-lg font-semibold; }
+  .typo-heading-subcard { @apply text-lg font-medium; }
+  .typo-heading-mini { @apply text-base font-semibold; }
+  .typo-heading-auth-hero { @apply text-3xl xl:text-4xl font-bold; }
+  .typo-heading-hero { @apply text-3xl font-bold; }
+  .typo-heading-display { @apply text-4xl font-bold; }
+  .typo-heading-accent { @apply text-3xl font-semibold; }
+
+  /* Body categories */
+  .typo-body { @apply text-base font-normal leading-6; }
+  .typo-body-sm { @apply text-sm font-normal leading-5; }
+  .typo-body-sm-strong { @apply text-sm font-medium leading-5; }
+  .typo-body-sm-emphasis { @apply text-sm font-semibold leading-5; }
+  .typo-body-base-strong { @apply text-base font-medium leading-6; }
+  .typo-lead { @apply text-lg font-normal leading-7; }
+  .typo-caption { @apply text-xs font-normal leading-4; }
+  .typo-caption-strong { @apply text-xs font-medium leading-4; }
+  .typo-caption-emphasis { @apply text-xs font-semibold leading-4; }
+  .typo-muted { @apply text-sm font-normal; }
+
+  /* Navigation / chrome categories */
+  .typo-nav-link {
+    @apply font-light;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
+  .typo-nav-meta { @apply text-xs font-medium; }
+  /** Collapsed desktop sidebar: setup progress kicker + percent (narrow rail) */
+  .typo-sidebar-collapsed-setup-line { @apply text-[7px] font-semibold uppercase leading-none tracking-tight; }
+  .typo-sidebar-collapsed-setup-percent { @apply text-[11px] font-semibold tabular-nums leading-none; }
+  .typo-topbar-user { @apply text-sm font-medium; }
+
+  /* Form / action categories */
+  .typo-label { @apply text-sm font-medium text-ep-body; }
+  .typo-input { @apply text-sm font-normal; }
+  .typo-button-sm { @apply text-xs font-semibold; }
+  .typo-button-md { @apply text-sm font-semibold; }
+  .typo-button-lg { @apply text-base font-semibold; }
+
+  /* Badge / status categories */
+  .typo-badge { @apply text-xs font-medium; }
+  .typo-status { @apply text-sm font-medium; }
+
+  /* Inline emphasis helpers */
+  .typo-regular { @apply font-normal; }
+  .typo-emphasis { @apply font-medium; }
+  .typo-emphasis-strong { @apply font-semibold; }
+  .typo-emphasis-bold { @apply font-bold; }
+
+  /* Symbol / icon text sizing */
+  .typo-symbol { @apply text-base; }
+  .typo-symbol-display { @apply text-4xl; }
+
+  /* Dashboard welcome modal */
+  .typo-welcome-title { @apply text-xl font-bold tracking-tight leading-tight sm:text-2xl; }
+  .typo-welcome-hero-title { @apply text-2xl font-bold tracking-tight leading-tight sm:text-[1.875rem]; }
+  .typo-welcome-subtitle { @apply text-base leading-relaxed; }
+  .typo-welcome-feature-title { @apply text-base font-semibold leading-snug; }
+  .typo-welcome-feature-description { @apply text-sm leading-relaxed sm:text-[0.9375rem]; }
+  .typo-welcome-badge { @apply text-sm font-medium; }
+}
