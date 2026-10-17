@@ -38,8 +38,6 @@ This is a **batched** publish from the private EndPlan web client — not a live
 | Mock backend (`stubs/`) | Production Go API |
 | Placeholder EndPlan marks | Proprietary logo / favicon packs |
 
-See [`docs/oss/CONTENT_BOUNDARY.md`](docs/oss/CONTENT_BOUNDARY.md) and [`docs/oss/PUBLISH.md`](docs/oss/PUBLISH.md).
-
 ## Requirements
 
 - **Node.js ≥ 22.12** (see [`.nvmrc`](.nvmrc))
@@ -73,7 +71,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Environment reference: [`ENV.md`](ENV.md). Client contracts without open backends: [`docs/contracts/README.md`](docs/contracts/README.md).
+Environment reference: [`ENV.md`](ENV.md). For local backends without production auth/API, use [`stubs/README.md`](stubs/README.md).
 
 ## Development
 
@@ -93,7 +91,7 @@ npm run oss:sanity   # fails on proprietary brand paths / forbidden host strings
 | `npm test` | Unit tests |
 | `npm run preview` | Preview the production build |
 
-Feature-sliced layout under `src/` (`app`, `pages`, `features`, `shared`). See [`docs/web-client-architecture.md`](docs/web-client-architecture.md).
+Feature-sliced layout under `src/` (`app`, `pages`, `features`, `shared`).
 
 ## Security
 

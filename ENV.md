@@ -35,8 +35,7 @@ VITE_API_URL=http://localhost:8080
 ## Auth / API backends
 
 Run your own Better Auth–compatible auth service and Go API (or mocks) that implement the
-client’s expected routes. See `docs/oss/CONTENT_BOUNDARY.md` and the README for what is
-in-repo vs out of scope.
+client’s expected routes. See the README for what is in-repo vs out of scope.
 
 Typical local ports used in development:
 
